@@ -25,13 +25,13 @@
 
 ![NY Times Reader](https://user-images.githubusercontent.com/28677929/212156705-5db489da-d03a-45ac-9754-f7e5f4e91068.gif)
 
-<img width="1400" alt="Screenshot 2023-01-11 at 9 01 48 PM" src="https://user-images.githubusercontent.com/28677929/212148950-57682531-bc36-4aee-9d6d-ea070f521d89.png">
+<img width="1200" alt="Screenshot 2023-01-11 at 9 01 48 PM" src="https://user-images.githubusercontent.com/28677929/212148950-57682531-bc36-4aee-9d6d-ea070f521d89.png">
 
-<img width="1400" alt="Screenshot 2023-01-12 at 11 31 25 AM" src="https://user-images.githubusercontent.com/28677929/212149755-36fc86a3-8a48-4e0c-b97b-f27dfad1e114.png">
+<img width="1200" alt="Screenshot 2023-01-12 at 11 31 25 AM" src="https://user-images.githubusercontent.com/28677929/212149755-36fc86a3-8a48-4e0c-b97b-f27dfad1e114.png">
 
-<img width="1400" alt="Screenshot 2023-01-12 at 11 33 18 AM" src="https://user-images.githubusercontent.com/28677929/212150153-434f9612-96d4-4151-b329-d1bc714f471b.png">
+<img width="1200" alt="Screenshot 2023-01-12 at 11 33 18 AM" src="https://user-images.githubusercontent.com/28677929/212150153-434f9612-96d4-4151-b329-d1bc714f471b.png">
 
-The NY Times Reader is a news reader application that pulls articles from the ![New York Times API Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview). Upon visiting the webpage, a user will see a list of articles, and be able to click on a specific article, which then takes a user to a detailed page with a link to the full article, along with search functionality by title. 
+The NY Times Reader is a news reader application that pulls articles from the [New York Times API Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview). Upon visiting the webpage, a user will see a list of articles, and be able to click on a specific article, which then takes a user to a detailed page with a link to the full article, along with search functionality by title. 
 
 The project specs can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe)
 
