@@ -1,70 +1,119 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#setup">Setup</a></li>
+    <li><a href="#usage">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#notes">Notes</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">Acknowledgments</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+</div>
 
-## Available Scripts
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-In the project directory, you can run:
+![NY Times Reader](https://user-images.githubusercontent.com/28677929/212156705-5db489da-d03a-45ac-9754-f7e5f4e91068.gif)
 
-### `npm start`
+<img width="1400" alt="Screenshot 2023-01-11 at 9 01 48 PM" src="https://user-images.githubusercontent.com/28677929/212148950-57682531-bc36-4aee-9d6d-ea070f521d89.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="1400" alt="Screenshot 2023-01-12 at 11 31 25 AM" src="https://user-images.githubusercontent.com/28677929/212149755-36fc86a3-8a48-4e0c-b97b-f27dfad1e114.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="1400" alt="Screenshot 2023-01-12 at 11 33 18 AM" src="https://user-images.githubusercontent.com/28677929/212150153-434f9612-96d4-4151-b329-d1bc714f471b.png">
 
-### `npm test`
+The NY Times Reader is a news reader application that pulls articles from the ![New York Times API Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview). Upon visiting the webpage, a user will see a list of articles, and be able to click on a specific article, which then takes a user to a detailed page with a link to the full article, along with search functionality by title. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project specs can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe)
 
-### `npm run build`
+### Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* ![React][React-shield]
+* ![React Router][React-Router-shield]
+* ![JavaScript][JavaScript-shield]
+* ![CSS][CSS-shield]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- SETUP -->
+## Setup
+- Visit [Deployed Site]()
 
-### `npm run eject`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- INSTALLATION -->
+## Installation 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repo
+2. Clone it down to local machine
+3. cd into the directory 
+4. Run `npm install`
+5. Run `npm start` in your terminal to start local server http://localhost:3000
+6. Enter `Ctrl + C` in your terminal to stop the local server running in the browser 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- USAGE -->
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![NY Times Reader](https://user-images.githubusercontent.com/28677929/212157404-9f6cf512-0fc0-4dee-a600-eacec77838b5.gif)
 
-## Learn More
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- NOTES -->
+## Notes 
+ This take-home challenge was completed in 8 hours. 🎉
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Feature Overview 
+- React framework including React hooks
+- React Router for a multi-page UX
+- Consume an API using an API key from the NYT API and deployed on Vercel
+- User can see an alphabetically sorted list of articles and search for articles by title
 
-### Code Splitting
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- ROADMAP -->
+## Roadmap
 
-### Analyzing the Bundle Size
+- [ ] 
+- [ ] 
+- [ ] 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments 
 
-### Making a Progressive Web App
+Used the following resources during the project: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [![MDN Docs][mdn-shield]][mdn]
+- [![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
 
-### Advanced Configuration
+<!-- CONTACT -->
+## Contact 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 
-### Deployment
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- MARKDOWN LINKS & IMAGES -->
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[React-shield]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[React-Router-shield]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[Redux-shield]: https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white
+[JavaScript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[CSS-shield]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[Cypress-shield]: https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e
+[Express-shield]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
+[Heroku-shield]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
+[Webpack-shield]: https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url1]: https://www.linkedin.com/in/ali-nix-38b9b9126/
+[turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
+[mdn]: https://developer.mozilla.org/en-US/
+[mdn-shield]: https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white

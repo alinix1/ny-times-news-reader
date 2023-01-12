@@ -6,18 +6,13 @@ import Articles from '../Articles/Articles';
 import SingleArticle from '../SingleArticle/SingleArticle'; 
 import { fetchArticlesData } from '../../apiCalls';
 
-// similar to a class-based component 
-// holds state 
-// every other component is functional
-// clear input method
-
 const App = () => {
 
   const [articles, setArticles] = useState([])
   const [searchArticles, setSearchArticles] = useState('')
   const [error, setError] = useState(false)
 
-  console.log(searchArticles)
+  // console.log(searchArticles)
 
   useEffect(() => {
     fetchArticlesData('food')
@@ -37,7 +32,6 @@ const findSingleArticle = (date) => {
 //   return articles.filter(article => {
 //     article.title.toLowerCase().includes(userSearch)
 //   })
-
 
   return (
     <main className="App">
