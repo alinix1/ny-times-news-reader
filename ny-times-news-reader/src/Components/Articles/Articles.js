@@ -7,7 +7,7 @@ const Articles =({articles, searchArticles}) => {
     if (searchArticles !== "") {
 
        articleData = articles.filter(article => {
-            article.title.toLowerCase().includes(searchArticles.toLowerCase())
+            return article.title.toLowerCase().includes(searchArticles.toLowerCase())
 
  
        })
