@@ -1,7 +1,11 @@
-import React from 'react'
-import './SearchBar.css'
+import React from 'react';
+import './SearchBar.css';
 
 const SearchBar = ({searchArticles, setSearchArticles}) => {
+
+    const clearInputs = () => {
+        setSearchArticles('')
+    }
 
     return (
     <form className='form-container'>
@@ -13,6 +17,7 @@ const SearchBar = ({searchArticles, setSearchArticles}) => {
         onChange={(event) => setSearchArticles(event.target.value)
         }
         />
+        <button onClick={() => clearInputs()}>home</button>
     </form>
     )
 }

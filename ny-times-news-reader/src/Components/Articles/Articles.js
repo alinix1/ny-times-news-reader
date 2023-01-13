@@ -1,6 +1,6 @@
-import React from 'react'
-import './Articles.css'
-import Card from '../Card/Card'
+import React from 'react';
+import './Articles.css';
+import Card from '../Card/Card';
 
 const Articles =({articles, searchArticles}) => {
     let articleData;

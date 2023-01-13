@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
+import loading from '../../assets/loading-icon.png';
 import Header from '../Header/Header'; 
 import Articles from '../Articles/Articles';
 import SingleArticle from '../SingleArticle/SingleArticle'; 
@@ -12,13 +13,11 @@ const App = () => {
   const [searchArticles, setSearchArticles] = useState('')
   const [error, setError] = useState(false)
 
-  // console.log(searchArticles)
-
   useEffect(() => {
     fetchArticlesData('food')
     .then(data => setArticles(data.results))
     .catch((error) => {
-      setError(error)
+      setError('Sorry, we couldn\t get the data. Please start over.')
     })
   }, [])
 
@@ -27,11 +26,6 @@ const findSingleArticle = (date) => {
     return article.published_date === date
   })
 }
-
-// const filterArticles = (userSearch) => {
-//   return articles.filter(article => {
-//     article.title.toLowerCase().includes(userSearch)
-//   })
 
   return (
     <main className="App">
@@ -50,7 +44,20 @@ const findSingleArticle = (date) => {
         <Articles searchArticles={searchArticles} articles={articles} />
       )}
       />
+      <Route 
+      exact path='*' element={
+        <h3 className='page-not-found'>404: Sorry, that page does not exist.</h3>
+      }/>
       </Switch>
+      {error && (
+        <h4 className='error-container'>{error}</h4>
+      )}
+      {!error && !articles.length && (
+        <div>
+          <img src={loading} alt='loading' className='loading-img' />
+          <h4>Loading...</h4>
+        </div>
+      )}
     </main>
   );
 }

@@ -3,27 +3,25 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-    border-top: 0.5rem solid #ececec;
-    border-bottom: 0.5rem solid #ececec;
+    border-top: 0.5rem solid #ECECEC;
+    border-bottom: 0.5rem solid #ECECEC;
     height: 100%;
     width: 100%;
 }
-
 .header-title {
-    margin: 0px;
-    font-family: 'ChomskyRegular', serif;
+    font-size: 3rem;
+    margin-right: 2%;
+    font-family: 'ANTIC SLAB';
     color: white;
     font-style: italic;
     color: white;
 }
-
 .nyt-logo {
-    height: 5rem;
-    margin-right: 85rem;
-    margin-bottom: 3vh;
-    margin-top: 1vh;
+    height: 6rem;
+    margin: -4%;
+    margin-bottom: 50px;
+    margin-right: 1095px;
 }
-
 .logo-container {
     display: flex;
     align-items: flex-start;

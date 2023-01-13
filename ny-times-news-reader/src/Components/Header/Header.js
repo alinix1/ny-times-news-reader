@@ -1,8 +1,8 @@
-import React from 'react'
-import logo from '../../assets/nyt-logo.png'
-import './Header.css'
+import React from 'react';
+import logo from '../../assets/nyt-logo.png';
+import './Header.css';
 import SearchBar from '../SearchBar/SearchBar';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Header = ({searchArticles, setSearchArticles}) => {
 
