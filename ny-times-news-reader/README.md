@@ -46,7 +46,7 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 
 <!-- SETUP -->
 ## Setup
-- Visit [Deployed Site]()
+- Visit [Deployed Site](https://ny-times-news-reader-z2cu.vercel.app/?)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,6 +59,8 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 4. Run `npm install`
 5. Run `npm start` in your terminal to start local server http://localhost:3000
 6. Enter `Ctrl + C` in your terminal to stop the local server running in the browser 
+7. To run this project, you will need to add the following environment variables to your `.env file`
+  - `API_KEY` from New York Times API Top Stories API
 
 <!-- USAGE -->
 ## Usage
@@ -82,9 +84,9 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] add E2E testing using Cypress
+- [ ] add PropTypes for type checking 
+- [ ] add thorough error handling
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments 
