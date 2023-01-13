@@ -1,8 +1,7 @@
-import React from 'react'
-import './SingleArticle.css'
+import React from 'react';
+import './SingleArticle.css';
 
 const SingleArticle = ({article}) => {
-   
     
     return (
         <div className='single-article-container'>
