@@ -31,6 +31,8 @@
 
 <img width="1200" alt="Screenshot 2023-01-12 at 11 33 18 AM" src="https://user-images.githubusercontent.com/28677929/212150153-434f9612-96d4-4151-b329-d1bc714f471b.png">
 
+<img width="1200" alt="Screenshot 2023-01-13 at 11 13 33 AM" src="https://user-images.githubusercontent.com/28677929/212391660-5144abeb-2171-47e9-b60c-87e82c853af5.png">
+
 The NY Times Reader is a news reader application that pulls articles from the [New York Times API Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview). Upon visiting the webpage, a user will see a list of articles, and be able to click on a specific article, which then takes a user to a detailed page with a link to the full article, along with search functionality by title. 
 
 The project specs can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe)
@@ -84,9 +86,10 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] add E2E testing using Cypress
-- [ ] add PropTypes for type checking 
-- [ ] add thorough error handling
+- [ ] E2E testing using Cypress & unit testing of individual components using Jest/React Testing Library
+- [ ] PropTypes for type checking 
+- [ ] Error handling
+- [ ] Find a way to show a user the full article without subscribing to the NYT
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments 
