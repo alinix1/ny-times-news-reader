@@ -85,6 +85,16 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Wins 
+-
+-
+-
+
+## Challenges 
+-
+-
+-
+
 <!-- ROADMAP -->
 ## Roadmap
 
