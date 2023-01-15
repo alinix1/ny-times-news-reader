@@ -43,7 +43,7 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 * ![React Router][React-Router-shield]
 * ![JavaScript][JavaScript-shield]
 * ![CSS][CSS-shield]
-* ![Miro][Miro-shild]
+* ![Miro][Miro-shield]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
