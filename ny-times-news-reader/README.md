@@ -43,6 +43,7 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 * ![React Router][React-Router-shield]
 * ![JavaScript][JavaScript-shield]
 * ![CSS][CSS-shield]
+* ![Miro][Miro-shild]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,6 +117,7 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 [Cypress-shield]: https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e
 [Express-shield]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
 [Heroku-shield]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
+[Miro-shield]: https://img.shields.io/badge/Miro-F7C922?style=for-the-badge&logo=Miro&logoColor=050036
 [Webpack-shield]: https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url1]: https://www.linkedin.com/in/ali-nix-38b9b9126/
