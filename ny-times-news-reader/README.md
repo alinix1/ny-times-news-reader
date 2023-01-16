@@ -29,7 +29,7 @@
 
 <img width="1200" alt="Screenshot 2023-01-12 at 11 31 25 AM" src="https://user-images.githubusercontent.com/28677929/212149755-36fc86a3-8a48-4e0c-b97b-f27dfad1e114.png">
 
-<img width="1200" alt="Screenshot 2023-01-12 at 11 33 18 AM" src="https://user-images.githubusercontent.com/28677929/212150153-434f9612-96d4-4151-b329-d1bc714f471b.png">
+<img width="1200" alt="Screenshot 2023-01-12 at 11 33 18 AM" src="https://user-images.githubusercontent.com/28677929/212762735-a2366425-23b0-4eac-b5f2-ed9b0d5f250e.png">
 
 <img width="1200" alt="Screenshot 2023-01-13 at 11 13 33 AM" src="https://user-images.githubusercontent.com/28677929/212391660-5144abeb-2171-47e9-b60c-87e82c853af5.png">
 
@@ -86,20 +86,18 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Wins 
--
--
--
+- completion of take-home challenge in ~8 hours
+- successfully implementing React hooks
+- understanding React Router more
 
 ## Challenges 
--
--
--
+- search bar functionality
+- error handling
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] E2E testing using Cypress & unit testing of individual components using Jest/React Testing Library
-- [ ] PropTypes for type checking 
+- [ ] E2E testing using Cypress & unit testing of components using Jest/React Testing Library
 - [ ] Error handling
 - [ ] Find a way to show a user the full article without subscribing to the NYT
 
