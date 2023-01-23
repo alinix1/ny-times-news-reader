@@ -9,7 +9,6 @@ const Articles =({articles, searchArticles}) => {
        articleData = articles.filter(article => {
             return article.title.toLowerCase().includes(searchArticles.toLowerCase())
 
- 
        })
     
     } else {
