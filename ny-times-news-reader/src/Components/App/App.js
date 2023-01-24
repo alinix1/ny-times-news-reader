@@ -45,9 +45,12 @@ const findSingleArticle = (date) => {
       )}
       />
       <Route 
-      exact path='*' element={
-        <h3 className='page-not-found'>404: Sorry, that page does not exist.</h3>
-      }/>
+      //any attempt to visit a page that does not exist *
+      path='*'
+      render={() => (
+        <h3 className='page-not-found'>This is also an error page</h3>
+      )}
+      />
       </Switch>
       {error && (
         <h4 className='error-container'>{error}</h4>
