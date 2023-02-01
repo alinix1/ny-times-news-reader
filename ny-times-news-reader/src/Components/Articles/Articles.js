@@ -3,6 +3,7 @@ import './Articles.css';
 import Card from '../Card/Card';
 
 const Articles =({articles, searchArticles}) => {
+
     let articleData;
     if (searchArticles !== "") {
 
@@ -26,7 +27,7 @@ const Articles =({articles, searchArticles}) => {
         )
     })
     
-    let sortedArticles = articleData.sort((a, b) => {
+    articleData.sort((a, b) => {
         return a.title.localeCompare(b.title)
     })
     return (
