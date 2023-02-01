@@ -2,15 +2,11 @@ import React from 'react';
 import './SingleArticle.css';
 
 const SingleArticle = ({article}) => {
-// BOOLEAN ? return if true : else return if false
-//return isLoggedIn ? <button>Logout</button> : <button>Login</button>
 
 if (!article[0]) {
     return <h3 className='page-does-not-exist'>404: Page does not exist</h3>
 } else {
     return (
-        // no {} inside of return statement
-        // use {} inside HTML/JSX elements 
         <div className='single-article-container'>
         <img src={article[0].multimedia[1].url} className='single-article-img'></img>
         <h1 className='single-article-title'>{article[0].title}</h1>

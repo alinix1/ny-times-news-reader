@@ -1,0 +1,65 @@
+{
+    "status": "OK",
+    "copyright":
+      "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+    "section": "food",
+    "last_updated": "2023-01-03T12:27:28-05:00",
+    "num_results": 39,
+    "results": [
+      {
+        "section": "food",
+        "subsection": "",
+        "title": "The Corporate Cafeteria Is Broken. So How to Feed Workers?",
+        "abstract":
+        "Even as the sprawling dining halls of old struggle with emptier workplaces, food is still important to employees, particularly the young. Many companies are reinventing the company meal.",
+        "url": "https://www.nytimes.com/2023/01/23/dining/corporate-cafeterias.html",
+        "uri": "nyt://article/a14bd433-17bc-5947-a46a-8ac910f2df2b",
+        "byline": "By Kim Severson",
+        "item_type": "Article",
+        "updated_date": "2023-01-23T17:18:35-05:00",
+        "created_date": "2023-01-23T11:15:07-05:00",
+        "published_date": "2023-01-23T11:15:07-05:00",
+        "material_type_facet": "",
+        "kicker": "",
+        "des_facet": ["Workplace Environment", "Employee Fringe Benefits", "Restaurants", "Corporations"],
+        "org_facet": ["Conde Nast Publications Inc", "Goldman Sachs Group Inc", "Durst Organization"],
+        "per_facet": [],
+        "geo_facet": [],
+        "multimedia": [
+          {
+            "url": "https://static01.nyt.com/images/2023/01/25/multimedia/25cafeteria1-lkcp/23cafeteria1-lkcp-superJumbo.jpg",
+            "format": "Super Jumbo",
+            "height": 1605,
+            "width": 2048,
+            "type": "image",
+            "subtype": "photo",
+            "caption":"Hallmark helped set the template for the huge corporate cafeteria with its Crown Room, which opened in 1956 at the company’s headquarters in Kansas City, Mo.",
+            "copyright": "Hallmark"
+          },
+          {
+            "url": "https://static01.nyt.com/images/2023/01/25/multimedia/25cafeteria1-lkcp/23cafeteria1-lkcp-threeByTwoSmallAt2X.jpg",
+            "format": "threeByTwoSmallAt2X",
+            "height": 400,
+            "width": 600,
+            "type": "image",
+            "subtype": "photo",
+            "caption":
+            "Hallmark helped set the template for the huge corporate cafeteria with its Crown Room, which opened in 1956 at the company’s headquarters in Kansas City, Mo.",
+            "copyright": "Hallmark"
+          },
+          {
+            "url": "https://static01.nyt.com/images/2023/01/25/multimedia/25cafeteria1-lkcp/25cafeteria1-lkcp-thumbLarge-v2.jpg",
+            "format": "Large Thumbnail",
+            "height": 150,
+            "width": 150,
+            "type": "image",
+            "subtype": "photo",
+            "caption":"Hallmark helped set the template for the huge corporate cafeteria with its Crown Room, which opened in 1956 at the company’s headquarters in Kansas City, Mo.",
+            "copyright": "Hallmark"
+          }
+        ],
+        "short_url": "https://nyti.ms/3j1qkMP"
+      }
+    ]
+}
+

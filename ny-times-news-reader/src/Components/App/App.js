@@ -45,7 +45,6 @@ const findSingleArticle = (date) => {
       )}
       />
       <Route 
-      //any attempt to visit a page that does not exist *
       path='*'
       render={() => (
         <h3 className='page-not-found'>This is also an error page</h3>
