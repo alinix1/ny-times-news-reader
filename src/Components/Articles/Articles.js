@@ -31,7 +31,7 @@ const Articles =({articles, searchArticles}) => {
         return a.title.localeCompare(b.title)
     })
     return (
-        <div className='cards'>{displayData}</div>
+        <div className='cards' data-cy='cards'>{displayData}</div>
     )
 }
 

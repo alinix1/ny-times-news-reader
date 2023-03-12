@@ -2,7 +2,7 @@ describe("Main Article Page", () => {
   beforeEach(() => {
     cy.intercept(
       "GET",
-      "https://ny-times-news-reader-z2cu.vercel.app/?",
+      "https://api.nytimes.com/svc/topstories/v2/food.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
     {
       statusCode: 200,
       ok: true,
