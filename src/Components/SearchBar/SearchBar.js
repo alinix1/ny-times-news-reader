@@ -13,6 +13,7 @@ const SearchBar = ({searchArticles, setSearchArticles}) => {
         type='text' 
         value={searchArticles}
         className='search' 
+        data-cy='search'
         placeholder='Search for Articles'
         onChange={(event) => setSearchArticles(event.target.value)
         }

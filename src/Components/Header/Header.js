@@ -9,7 +9,7 @@ const Header = ({searchArticles, setSearchArticles}) => {
     return (
         <header className='header-container'>
             <Link to='/'>
-                <h1 className='header-title'>NY Times Reader</h1>
+                <h1 className='header-title' data-cy='title'>NY Times Reader</h1>
               <div className='logo-container'>
                 <img className='nyt-logo' src={logo} alt='new-york-times logo' />
               </div>
