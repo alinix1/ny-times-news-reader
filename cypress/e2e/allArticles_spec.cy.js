@@ -12,8 +12,15 @@ describe("Main Article Page", () => {
     cy.visit("http://localhost:3000")
   })
 
-  it('Should be able to visit the home page and render the title', () => {
+  it('Should be able to visit the home page and render the correct elements', () => {
     cy.get('[data-cy="title"]').contains('NY Times Reader')
+    cy.get('[data-cy="nyt-logo"]').should('be.visible')
+  })
+  
+  it('Should show all article cards including a title, and image', () => {
+    cy.get('[data-cy="card-container"]').should('be.visible')
+    cy.get('[data-cy="article-title"]').should('be.visible')
+    cy.contains('[data-cy="article-title"]', "Inside the ‘Top Chef’ Industrial Complex")
   })
 
   it('Should be able to see a search bar and search by article title', () => {
@@ -22,12 +29,12 @@ describe("Main Article Page", () => {
     cy.contains('[data-cy="article-title"]', "Restaurant Review: At Okiboru, Soupless Ramen in a Stressless Setting")
   })
 
-  it('Should show all article cards including a title, and image', () => {
-    cy.get('[data-cy="card-container"]').should('be.visible')
-    cy.get('[data-cy="article-title"]').should('be.visible')
-    cy.contains('[data-cy="article-title"]', "Inside the ‘Top Chef’ Industrial Complex")
+  it('Should be able to click the home button and clear the input field', () => {
+    cy.get('[data-cy="search"]').should('be.visible')
+    cy.get('input[type="text"]').type("Finds")
+    cy.get('[data-cy="home-button"]').click()
   })
-
+  
   it('Should show all article cards and be able to click on an article and be shown more info on article', () => {
     cy.get('[data-cy="cards"]').children().contains("Inside the ‘Top Chef’ Industrial Complex").click()
     cy.get('[data-cy="single-article-img"]').should('be.visible')
@@ -45,5 +52,5 @@ describe("Main Article Page", () => {
     cy.get('[data-cy="cards"]').children().contains("Inside the ‘Top Chef’ Industrial Complex").click()
     cy.get('[data-cy="button"]').contains('Full Article').click()
   })
-
+  
 })

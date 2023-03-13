@@ -11,7 +11,7 @@ const Header = ({searchArticles, setSearchArticles}) => {
             <Link to='/'>
                 <h1 className='header-title' data-cy='title'>NY Times Reader</h1>
               <div className='logo-container'>
-                <img className='nyt-logo' src={logo} alt='new-york-times logo' />
+                <img className='nyt-logo' data-cy='nyt-logo' src={logo} alt='new-york-times logo' />
               </div>
             </Link>
             <SearchBar searchArticles={searchArticles} setSearchArticles={setSearchArticles} />
