@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 import Articles from '../Articles/Articles';
 import SingleArticle from '../SingleArticle/SingleArticle'; 
 import { fetchArticlesData } from '../../apiCalls';
-import ErrorContainer from '../ErrorContainer/ErrorContainer';
+// import ErrorContainer from '../ErrorContainer/ErrorContainer';
 
 const App = () => {
 
@@ -45,15 +45,20 @@ return (
         <Articles searchArticles={searchArticles} articles={articles} />
         )}
       />
-        <Route 
-        exact path='*' element={<ErrorContainer />}/>
+       <Route 
+      path='*'
+      render={() => (
+        <h3 className='page-not-found'>This is also an error page</h3>
+      )}
+      />
       </Switch>
       {error && (
         <h4 className='error-container'>{error}</h4>
-        )}
+      )}
       {!error && !articles.length && (
         <div>
           <img src={loading} alt='loading' className='loading-img' />
+          <h4>Loading...</h4>
         </div>
       )}
     </main>
