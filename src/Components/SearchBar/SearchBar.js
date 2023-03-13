@@ -18,7 +18,7 @@ const SearchBar = ({searchArticles, setSearchArticles}) => {
         onChange={(event) => setSearchArticles(event.target.value)
         }
         />
-        <button onClick={() => clearInputs()}>home</button>
+        <button className='home-button' data-cy='home-button' onClick={() => clearInputs()}>home</button>
     </form>
     )
 }

@@ -28,7 +28,7 @@ const findSingleArticle = (date) => {
   })
 }
 
-  return (
+return (
     <main className="App">
       <Header searchArticles={searchArticles} setSearchArticles={setSearchArticles}/>
       <Switch>
