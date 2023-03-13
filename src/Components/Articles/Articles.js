@@ -1,6 +1,7 @@
 import React from 'react';
 import './Articles.css';
 import Card from '../Card/Card';
+import PropTypes from 'prop-types';
 
 const Articles =({articles, searchArticles}) => {
     let articleData;
@@ -35,3 +36,8 @@ const Articles =({articles, searchArticles}) => {
 }
 
 export default Articles
+
+Articles.propTypes = {
+    articles: PropTypes.array.isRequired,
+    searchArticles: PropTypes.string.isRequired
+}

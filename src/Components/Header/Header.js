@@ -3,6 +3,7 @@ import logo from '../../assets/nyt-logo.png';
 import './Header.css';
 import SearchBar from '../SearchBar/SearchBar';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Header = ({searchArticles, setSearchArticles}) => {
 
@@ -20,3 +21,8 @@ const Header = ({searchArticles, setSearchArticles}) => {
 }
 
 export default Header
+
+Header.propTypes = {
+  searchArticles: PropTypes.string.isRequired,
+  setSearchArticles: PropTypes.func.isRequired
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './SearchBar.css';
 
 const SearchBar = ({searchArticles, setSearchArticles}) => {
@@ -24,3 +25,8 @@ const SearchBar = ({searchArticles, setSearchArticles}) => {
 }
 
 export default SearchBar
+
+SearchBar.propTypes = {
+    searchArticles: PropTypes.string.isRequired,
+    setSearchArticles: PropTypes.func.isRequired
+  }
