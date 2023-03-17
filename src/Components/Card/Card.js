@@ -1,25 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import './Card.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import "./Card.css";
 
-const Card = ({image, title, id}) => {
-    return (
-        <Link to={`/${id}`} >
-            <div className='card-container' data-cy='card-container'>
-                <div className='card'>
-                    <img className='article-img' data-cy='article-img' src={image} alt='image of an article'/>
-                    <h2 className='article-title' data-cy='article-title'>{title}</h2>
-                </div>
-            </div>
-        </Link>
-    )
-}
+const Card = ({ image, title, id }) => {
+  return (
+    <Link to={`/${id}`}>
+      <div className="card-container" role ='card' data-cy="card-container">
+        <div className="card">
+          <img
+            className="article-img"
+            data-cy="article-img"
+            src={image}
+            alt="image of an article"
+          />
+          <h2 className="article-title" data-cy="article-title">
+            {title}
+          </h2>
+        </div>
+      </div>
+    </Link>
+  );
+};
 
-export default Card
+export default Card;
 
 Card.propTypes = {
-    image: PropTypes.string.isRequired, 
-    title: PropTypes.string.isRequired, 
-    id: PropTypes.string.isRequired
-}
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};

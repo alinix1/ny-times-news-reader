@@ -1,32 +1,40 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './SearchBar.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./SearchBar.css";
 
-const SearchBar = ({searchArticles, setSearchArticles}) => {
+const SearchBar = ({ searchArticles, setSearchArticles }) => {
+  const clearInputs = () => {
+    setSearchArticles("");
+  };
 
-    const clearInputs = () => {
-        setSearchArticles('')
-    }
-
-    return (
-    <form className='form-container'>
-        <input 
-        type='text' 
+  return (
+    <form className="form-container" data-test="form-container">
+      <input
+        type="text"
         value={searchArticles}
-        className='search' 
-        data-cy='search'
-        placeholder='Search for Articles'
-        onChange={(event) => setSearchArticles(event.target.value)
-        }
-        />
-        <button className='home-button' data-cy='home-button' onClick={() => clearInputs()}>home</button>
+        role="search"
+        aria-label="search-input"
+        className="search"
+        data-test="search"
+        data-cy="search"
+        placeholder="Search for Articles"
+        onChange={(event) => setSearchArticles(event.target.value)}
+      />
+      <button
+        className="home-button"
+        data-test="home-button"
+        data-cy="home-button"
+        onClick={() => clearInputs()}
+      >
+        home
+      </button>
     </form>
-    )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;
 
 SearchBar.propTypes = {
-    searchArticles: PropTypes.string.isRequired,
-    setSearchArticles: PropTypes.func.isRequired
-  }
+  searchArticles: PropTypes.string.isRequired,
+  setSearchArticles: PropTypes.func.isRequired,
+};
