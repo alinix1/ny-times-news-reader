@@ -8,7 +8,7 @@ const Card = ({image, title, id}) => {
         <Link to={`/${id}`} >
             <div className='card-container' data-cy='card-container'>
                 <div className='card'>
-                    <img className='article-img' data-cy='article-img' src={image} alt='image of an article'/>
+                    <img className='article-img' data-cy='article-img' src={image} alt='info on article card'/>
                     <h2 className='article-title' data-cy='article-title'>{title}</h2>
                 </div>
             </div>
