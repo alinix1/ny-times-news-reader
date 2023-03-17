@@ -1,25 +1,28 @@
-/* .single-article-container {
-
-}
-
-.single-article-img {
-
-}
+.single-article-container {
+    background-color: #fff9db;
+} 
 
 .single-article-title {
-
+    font-family: "Noticia Text, sans-serif"; 
 }
 
 .single-article-byline {
-
+    font-family: inherit;
 }
 
 .single-article-abstract {
+    font-family: inherit;
+} 
 
-} */
+/* .single-article-img {
 
-/* .button {
+}*/
 
-} */
+.button {
+    font-weight: 700;
+
+}
+
+
 
 
