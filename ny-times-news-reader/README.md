@@ -39,6 +39,9 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 
 * ![React][React-shield]
 * ![React Router][React-Router-shield]
+* ![Cypress][Cypress-shield]
+* ![React-Testing-Library][React-Testing-shield]
+* ![Jest][Jest-shield]
 * ![JavaScript][JavaScript-shield]
 * ![CSS][CSS-shield]
 * ![Figma][Figma-shield]
@@ -122,6 +125,8 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 [JavaScript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [CSS-shield]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [Cypress-shield]: https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e
+[Jest-shield]: https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white
+[React-Testing-shield]: https://img.shields.io/badge/-TestingLibrary-%23E33332?&style=for-the-badge&logo=testing-library&logoColor=white
 [Express-shield]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
 [Heroku-shield]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
 [Miro-shield]: https://img.shields.io/badge/Miro-F7C922?style=for-the-badge&logo=Miro&logoColor=050036
