@@ -1,6 +1,6 @@
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { fetchArticlesData } from "./apiCalls";
 import App from "./Components/App/App";
@@ -67,7 +67,28 @@ describe("App", () => {
     expect(fetch).toHaveBeenCalledWith(url);
   });
 
-  it("renders an error message if rejected promise in fetching articles", async () => {
+  it.skip("renders an error message if rejected promise in fetching articles", async () => {
     // const error = await waitFor(() => "Sorry, we couldn\'t get the data. Please start over.")
+  });
+
+  it("should change the value when a user types in the search bar", () => {
+    const searchInput = screen.getByRole("search");
+    expect(searchInput.value).toBe("");
+
+    fireEvent.change(searchInput, { target: { value: "23" } });
+    expect(searchInput.value).toBe("23");
+  });
+
+  it("should clear input field when the home button is clicked", () => {
+    const homeBtn = screen.getByRole("button", { name: "home" });
+
+    const searchInput = screen.getByRole("search");
+    expect(searchInput.value).toBe("");
+
+    fireEvent.change(searchInput, { target: { value: "23" } });
+    expect(searchInput.value).toBe("23");
+
+    fireEvent.click(homeBtn);
+    expect(searchInput.value).toBe("");
   });
 });

@@ -18,6 +18,7 @@ const SearchBar = ({ searchArticles, setSearchArticles }) => {
         data-test="search"
         data-cy="search"
         placeholder="Search for Articles"
+        
         onChange={(event) => setSearchArticles(event.target.value)}
       />
       <button
@@ -35,6 +36,6 @@ const SearchBar = ({ searchArticles, setSearchArticles }) => {
 export default SearchBar;
 
 SearchBar.propTypes = {
-  searchArticles: PropTypes.string.isRequired,
+  searchArticles: PropTypes.func.isRequired,
   setSearchArticles: PropTypes.func.isRequired,
 };
