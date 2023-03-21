@@ -48,7 +48,7 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 
 <!-- SETUP -->
 ## Setup
-- Visit [Deployed Site](https://ny-times-news-reader-z2cu.vercel.app/?)
+- Visit [Deployed Site](https://ny-times-news-reader-otuxaet8h-alinix1.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
