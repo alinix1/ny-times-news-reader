@@ -13,7 +13,7 @@ const SingleArticle = ({ article }) => {
           className="single-article-img"
           data-cy="single-article-img"
         ></img>
-        <h1 className="single-article-title" data-cy="single-article-title">
+        <h1 className="single-article-title" data-testid='single-article-title' data-cy="single-article-title">
           {article[0].title}
         </h1>
         <p className="single-article-byline" data-cy="single-article-byline">

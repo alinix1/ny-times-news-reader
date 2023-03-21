@@ -3,11 +3,12 @@ import { MemoryRouter } from "react-router-dom";
 import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { fetchArticlesData } from "./apiCalls";
+import { act } from 'react-dom/test-utils';
 import App from "./Components/App/App";
 
 describe("App", () => {
-  let contentType;
   beforeEach(() => {
+    let contentType;
     contentType = { "Content-Type": "application/json" };
 
     global.fetch = jest.fn(() =>
@@ -49,7 +50,9 @@ describe("App", () => {
         `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=${process.env.REACT_APP_API_KEY}`
     );
 
-    fetchArticlesData("food");
+    act(() => {
+      fetchArticlesData("food");
+    })
 
     expect(fetch).toHaveBeenCalledTimes(2);
     expect(fetch).toHaveBeenCalledWith(url);
@@ -60,15 +63,12 @@ describe("App", () => {
       () =>
         `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`
     );
-
-    fetchArticlesData("home");
+      act(() => {
+        fetchArticlesData("home");
+      })
 
     expect(fetch).toHaveBeenCalledTimes(2);
     expect(fetch).toHaveBeenCalledWith(url);
-  });
-
-  it.skip("renders an error message if rejected promise in fetching articles", async () => {
-    // const error = await waitFor(() => "Sorry, we couldn\'t get the data. Please start over.")
   });
 
   it("should change the value when a user types in the search bar", () => {
