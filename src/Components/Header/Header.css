@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #000;
     border-top: 0.5rem solid #ECECEC;
     border-bottom: 0.5rem solid #ECECEC;
     height: 100%;
@@ -11,19 +11,18 @@
 .header-title {
     font-size: 3rem;
     margin-right: 2%;
-    font-family: 'ANTIC SLAB';
-    color: white;
-    font-style: italic;
-    color: white;
+    font-family: "Noticia Text, sans-serif";
+    color: #fff;
+    color: #fff;
 }
 .nyt-logo {
     height: 6rem;
     margin: -4%;
-    margin-bottom: 50px;
-    margin-right: 1095px;
+    margin-bottom: 3.1rem;
+    margin-right: 68.5rem;
 }
 .logo-container {
     display: flex;
     align-items: flex-start;
-    margin-left: 100px;
+    margin-left: 10rem;
 }

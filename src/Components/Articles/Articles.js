@@ -12,7 +12,6 @@ const Articles = ({ articles, searchArticles }) => {
   } else {
     articleData = articles;
   }
-  const displayData = articleData.map((article) => {
     return (
       <Card
         id={article.published_date}
