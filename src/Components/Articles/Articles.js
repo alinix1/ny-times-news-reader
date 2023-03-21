@@ -12,12 +12,11 @@ const Articles = ({ articles, searchArticles }) => {
   } else {
     articleData = articles;
   }
-  let displayData = articleData.map((article) => {
     return (
       <Card
         id={article.published_date}
         key={article.uri}
-        image={article.multimedia[2].url}
+        image={article.multimedia[2]?.url || ''}
         title={article.title}
       />
     );
