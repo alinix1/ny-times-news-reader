@@ -95,7 +95,7 @@ The project specs can be found [here](https://mod4.turing.edu/projects/take_home
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] E2E testing using Cypress & unit testing of components using Jest/React Testing Library
+- [X] E2E testing using Cypress & unit testing of components using Jest/React Testing Library
 - [X] Error handling
 - [ ] Find a way to show a user the full article without subscribing to the NYT
 
