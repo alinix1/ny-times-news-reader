@@ -8,7 +8,7 @@ import {
 } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
-import Header from "./Components/Header/Header";
+import Header from "./Header";
 
 describe("Header", () => {
   beforeEach(() => {

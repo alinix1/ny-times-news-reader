@@ -6,7 +6,7 @@ import "./Card.css";
 const Card = ({ image, title, id }) => {
   return (
     <Link to={`/${id}`}>
-      <div className="card-container" role ='card' data-cy="card-container">
+      <div className="card-container" data-testid="card-container" role ='card' data-cy="card-container">
         <div className="card">
           <img
             className="article-img"
@@ -26,7 +26,7 @@ const Card = ({ image, title, id }) => {
 export default Card;
 
 Card.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  id: PropTypes.string,
 };

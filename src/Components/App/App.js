@@ -6,7 +6,6 @@ import Header from "../Header/Header";
 import Articles from "../Articles/Articles";
 import SingleArticle from "../SingleArticle/SingleArticle";
 import { fetchArticlesData } from "../../apiCalls";
-// import ErrorContainer from '../ErrorContainer/ErrorContainer';
 
 const App = () => {
   const [articles, setArticles] = useState([]);

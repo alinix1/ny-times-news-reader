@@ -1,6 +1,6 @@
 import { screen, render } from "@testing-library/react";
 import React from "react";
-import SearchBar from "./Components/SearchBar/SearchBar";
+import SearchBar from "./SearchBar";
 import "@testing-library/jest-dom";
 
 describe("Search bar", () => {
