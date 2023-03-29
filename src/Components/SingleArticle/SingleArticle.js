@@ -14,7 +14,6 @@ const SingleArticle = ({ article }) => {
           data-cy="single-article-img"
           alt="single article"
         ></img>
-        <h1 className="single-article-title" data-testid="single-article-title" data-cy="single-article-title">
         <h1 className="single-article-title" data-testid='single-article-title' data-cy="single-article-title">
           {article[0].title}
         </h1>
