@@ -4,6 +4,7 @@ import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { fetchArticlesData } from "../../apiCalls";
 import App from "./App";
+import { act } from 'react-dom/test-utils';
 
 describe("App", () => {
   beforeEach(() => {
