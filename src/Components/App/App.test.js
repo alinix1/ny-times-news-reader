@@ -2,9 +2,8 @@ import React from "react";
 import { MemoryRouter } from "react-router-dom";
 import { render, screen, waitFor, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { fetchArticlesData } from "./apiCalls";
-import { act } from 'react-dom/test-utils';
-import App from "./Components/App/App";
+import { fetchArticlesData } from "../../apiCalls";
+import App from "./App";
 
 describe("App", () => {
   beforeEach(() => {

@@ -33,6 +33,6 @@ const Header = ({ searchArticles, setSearchArticles }) => {
 export default Header;
 
 Header.propTypes = {
-  searchArticles: PropTypes.string.isRequired,
-  setSearchArticles: PropTypes.func.isRequired,
+  searchArticles: PropTypes.string,
+  setSearchArticles: PropTypes.func,
 };

@@ -36,6 +36,6 @@ const SearchBar = ({ searchArticles, setSearchArticles }) => {
 export default SearchBar;
 
 SearchBar.propTypes = {
-  searchArticles: PropTypes.string.isRequired,
-  setSearchArticles: PropTypes.func.isRequired,
+  searchArticles: PropTypes.string,
+  setSearchArticles: PropTypes.func,
 };

@@ -36,6 +36,6 @@ const Articles = ({ articles, searchArticles }) => {
 export default Articles;
 
 Articles.propTypes = {
-  articles: PropTypes.array.isRequired,
-  searchArticles: PropTypes.string.isRequired,
+  articles: PropTypes.array,
+  searchArticles: PropTypes.string,
 };
