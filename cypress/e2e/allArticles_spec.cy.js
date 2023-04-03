@@ -72,6 +72,19 @@ describe("Main Article Page", () => {
       .click();
     cy.get('[data-cy="button"]').contains("Full Article").click();
   });
+
+  it("Should show an error if API fails a response", () => {
+    cy.intercept(
+      "GET",
+      "https://api.nytimes.com/svc/topstories/v2/food.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
+      {
+        statusCode: 400,
+        ok: false,
+        fixture: "error",
+      }
+    );
+    cy.visit("http://localhost:3000");
+  });
 });
 
 describe("Loading and Error Page", () => {
