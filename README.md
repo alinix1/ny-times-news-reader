@@ -22,11 +22,25 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+*glimpse at the app*
+
 ![NY Times Reader](https://user-images.githubusercontent.com/28677929/212156705-5db489da-d03a-45ac-9754-f7e5f4e91068.gif)
+
+*lighthouse evaluation score*
 
 <img width="900" alt="Screenshot 2023-01-11 at 9 01 48 PM" src="https://user-images.githubusercontent.com/28677929/212148950-57682531-bc36-4aee-9d6d-ea070f521d89.png">
 
+*wireframes*
+
+<img width="459" alt="Screenshot 2023-04-03 at 2 04 45 PM" src="https://user-images.githubusercontent.com/28677929/229615393-cfd20f9f-a770-447b-bb60-c1839324c399.png">
+
+<img width="430" alt="Screenshot 2023-04-03 at 3 21 24 PM" src="https://user-images.githubusercontent.com/28677929/229630264-0fb917be-df48-44ba-ba9f-7f9855eb56ab.png">
+
+*component architecture*
+
 <img width="900" alt="Screenshot 2023-01-12 at 11 33 18 AM" src="https://user-images.githubusercontent.com/28677929/212762735-a2366425-23b0-4eac-b5f2-ed9b0d5f250e.png">
+
+*JSON response example*
 
 <img width="456" alt="Screenshot 2023-04-03 at 12 30 51 PM" src="https://user-images.githubusercontent.com/28677929/229596818-89d13dec-dfbf-49b2-8069-b4056f2bf298.png">
 
