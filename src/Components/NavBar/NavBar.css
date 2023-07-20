@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "Noticia Text, sans-serif";
+  background-color: #afafaf;
+}
+
+nav > a {
+  padding: 10px 2.5%;
+  text-decoration: none;
+}

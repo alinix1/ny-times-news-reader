@@ -1,28 +1,24 @@
-.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    border-top: 0.5rem solid #ECECEC;
-    border-bottom: 0.5rem solid #ECECEC;
-    height: 100%;
-    width: 100%;
+.header-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-decoration: none;
+  border-top: 0.5rem solid #ececec;
+  border-bottom: 0.5rem solid #ececec;
+  height: 100%;
+  width: 100%;
 }
+
 .header-title {
-    font-size: 3rem;
-    margin-right: 2%;
-    font-family: "Noticia Text, sans-serif";
-    color: #fff;
-    color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  margin-right: 2%;
+  font-family: "Noticia Text, sans-serif";
+  color: #fff;
 }
+
 .nyt-logo {
-    height: 6rem;
-    margin: -4%;
-    margin-bottom: 3.1rem;
-    margin-right: 68.5rem;
-}
-.logo-container {
-    display: flex;
-    align-items: flex-start;
-    margin-left: 10rem;
+  height: 6rem;
 }
