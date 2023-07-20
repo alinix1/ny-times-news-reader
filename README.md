@@ -152,3 +152,4 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 [turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
 [mdn]: https://developer.mozilla.org/en-US/
 [mdn-shield]: https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white
+# ny-times-news-reader
