@@ -48,8 +48,3 @@
   opacity: 1;
   filter: blur(3px) brightness(80%);
 }
-
-h2,
-p {
-  font-family: "Noticia Text, sans-serif";
-}

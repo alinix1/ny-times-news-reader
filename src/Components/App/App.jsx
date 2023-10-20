@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router";
 import Header from "../Header/Header";
 import NavBar from "../NavBar/NavBar";
 import ArticleList from "../ArticleList/ArticleList";
 import About from "../About/About";
 import SingleArticle from "../SingleArticle/SingleArticle";
+import { useParams } from "react-router";
+import { fetchArticlesData } from "../../apiCalls";
 import "./App.css";
 
 const App = () => {
@@ -12,13 +14,28 @@ const App = () => {
   const [selectedCategory, setSelectedCategory] = useState({});
   const [error, setError] = useState(null);
 
+  const { category } = useParams();
+
+  useEffect(() => {
+    const currentCategory = category ? category : "home";
+    if (category) {
+      setArticles(null);
+    }
+
+    fetchArticlesData(currentCategory)
+      .then((articles) => setArticles(articles))
+      .catch((error) => {
+        setError(error.message);
+      });
+  }, [category, setArticles, setError]);
+
   if (error) {
     return <p>Something has gone wrong: {error}</p>;
   }
+
   return (
     <div className="app-container">
       <Header />
-
       <NavBar />
       <Routes>
         <Route
@@ -45,7 +62,13 @@ const App = () => {
         />
         <Route
           path="/article/:id"
-          element={<SingleArticle selectedCategory={selectedCategory} />}
+          element={
+            <SingleArticle
+              articles={articles}
+              selectedCategory={selectedCategory}
+              setSelectedCategory={setSelectedCategory}
+            />
+          }
         />
         <Route path="/about" element={<About setError={setError} />} />
         <Route

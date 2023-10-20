@@ -17,7 +17,8 @@ const fetchArticlesData = async (category) => {
           abstract: item.abstract,
           url: item.url,
           byline: item.byline,
-          largeImage: item.multimedia ? item.multimedia[1] : "#",
+          publishedDate: item.published_date,
+          largeImage: item.multimedia ? item.multimedia[0] : "#",
           thumbnailImage: item.multimedia ? item.multimedia[2] : "#",
         };
       });

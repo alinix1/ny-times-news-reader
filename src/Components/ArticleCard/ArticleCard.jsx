@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import "./ArticleCard.css";
 
 const ArticleCard = ({ article, setSelectedCategory }) => {
-  const { title, byline, thumbnailImage } = article;
+  const { title, byline, thumbnailImage, id } = article;
 
   const clickHandler = () => {
     setSelectedCategory(article);
@@ -9,14 +10,18 @@ const ArticleCard = ({ article, setSelectedCategory }) => {
 
   return (
     <article className="article-container">
-      <button title="Article Details" onClick={clickHandler}>
+      <Link
+        to={`/article/${id}`}
+        title="Article Details"
+        onClick={clickHandler}
+      >
         <img
           className="article-img"
           src={thumbnailImage.url}
           alt={thumbnailImage.copyright}
           style={{ width: 150, height: 150 }}
         />
-      </button>
+      </Link>
       <h2>{title}</h2>
       <p>{byline}</p>
     </article>

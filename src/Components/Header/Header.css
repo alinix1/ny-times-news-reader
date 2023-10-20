@@ -1,9 +1,9 @@
 .header-container {
+  background-color: #f2790f;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f2790f;
-  padding: 2rem;
   position: relative;
 }
 
@@ -25,14 +25,14 @@
 
 .video-container {
   text-align: center;
-  position: relative;
   width: 50%;
   height: auto;
   display: block;
   margin: 0 auto;
+  position: relative;
 }
 
 .background-video {
-  width: 100%;
+  width: 80%;
   height: auto;
 }

@@ -5,6 +5,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header-container">
+      <img className="nyt-logo" src={logo} alt="New York Times logo" />
       <div className="video-container">
         <video autoPlay loop muted className="background-video">
           <source src={timesSquareVideo} type="video/mp4" />
@@ -13,9 +14,6 @@ const Header = () => {
         <h1 className="header-title" style={{ fontSize: "40px" }}>
           NY Times News
         </h1>
-        <div className="logo-container">
-          <img className="nyt-logo" src={logo} alt="New York Times logo" />
-        </div>
       </div>
     </header>
   );
