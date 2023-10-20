@@ -1,198 +1,184 @@
 {
   "status": "OK",
   "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
-  "section": "Food",
-  "last_updated": "2023-03-09T22:58:42-05:00",
+  "section": "Arts",
+  "last_updated": "2023-10-18T17:58:51-04:00",
   "num_results": 39,
   "results": [
-  {
-  "section": "dining",
-  "subsection": "",
-  "title": "Inside the ‘Top Chef’ Industrial Complex",
-  "abstract": "Entering its 20th season, the sprawling Bravo franchise has changed the way Americans eat and become a mirror of the restaurant industry.",
-  "url": "https://www.nytimes.com/2023/03/09/dining/top-chef-season-20.html",
-  "uri": "nyt://article/33e16465-e532-5f23-aa21-e58f4181418e",
-  "byline": "By Brett Anderson",
-  "item_type": "Article",
-  "updated_date": "2023-03-10T10:10:49-05:00",
-  "created_date": "2023-03-09T22:30:08-05:00",
-  "published_date": "2023-03-09T22:30:08-05:00",
-  "material_type_facet": "",
-  "kicker": "",
-  "des_facet": [
-  "Top Chef (TV Program)",
-  "Reality Television",
-  "Contests and Prizes",
-  "Chefs",
-  "Cooking and Cookbooks",
-  "Restaurants"
-  ],
-  "org_facet": [
-  "Magical Elves",
-  "Bravo",
-  "NBCUniversal"
-  ],
-  "per_facet": [
-  "Colicchio, Tom",
-  "Lakshmi, Padma"
-  ],
-  "geo_facet": [ ],
-  "multimedia": [
-  {
-  "url": "https://static01.nyt.com/images/2023/03/15/dining/15Top-Chef-Cover/15Top-Chef-Cover-superJumbo.jpg",
-  "format": "Super Jumbo",
-  "height": 2048,
-  "width": 1753,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "",
-  "copyright": "Photo Illustration by Sean McCabe. Photographs by Bravo"
-  },
-  {
-  "url": "https://static01.nyt.com/images/2023/03/15/dining/15Top-Chef-Cover/15Top-Chef-Cover-threeByTwoSmallAt2X.jpg",
-  "format": "threeByTwoSmallAt2X",
-  "height": 400,
-  "width": 600,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "",
-  "copyright": "Photo Illustration by Sean McCabe. Photographs by Bravo"
-  },
-  {
-  "url": "https://static01.nyt.com/images/2023/03/15/dining/15Top-Chef-Cover/15Top-Chef-Cover-thumbLarge.jpg",
-  "format": "Large Thumbnail",
-  "height": 150,
-  "width": 150,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "",
-  "copyright": "Photo Illustration by Sean McCabe. Photographs by Bravo"
-  }
-  ],
-  "short_url": "https://nyti.ms/421q4ij"
-},
-
-{
-  "section": "dining",
-  "subsection": "drinks",
-  "title": "Angel’s Share Finds a New Home in Greenwich Village",
-  "abstract": "The pioneering cocktail bar will move to a building with landmark status, just down the street from Via Carota.",
-  "url": "https://www.nytimes.com/2023/03/09/dining/drinks/angels-share-reopening-greenwich-village-nyc.html",
-  "uri": "nyt://article/442b3075-0207-59f8-b815-56b593d5aae4",
-  "byline": "By Robert Simonson",
-  "item_type": "Article",
-  "updated_date": "2023-03-09T05:00:24-05:00",
-  "created_date": "2023-03-09T05:00:24-05:00",
-  "published_date": "2023-03-09T05:00:24-05:00",
-  "material_type_facet": "",
-  "kicker": "",
-  "des_facet": [
-  "Bars and Nightclubs",
-  "Cocktails and Mixed Drinks"
-  ],
-  "org_facet": [
-  "Angel's Share (Manhattan, NY, Bar)"
-  ],
-  "per_facet": [
-  "Yoshida, Tadao (Tony)"
-  ],
-  "geo_facet": [
-  "Greenwich Village (Manhattan, NY)"
-  ],
-  "multimedia": [
-  {
-  "url": "https://static01.nyt.com/images/2023/03/03/multimedia/00angels-share-fcjg/00angels-share-fcjg-superJumbo.jpg",
-  "format": "Super Jumbo",
-  "height": 1366,
-  "width": 2048,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "The original Angel’s Share closed a year ago.",
-  "copyright": "Haruka Sakaguchi for The New York Times"
-  },
-  {
-  "url": "https://static01.nyt.com/images/2023/03/03/multimedia/00angels-share-fcjg/00angels-share-fcjg-threeByTwoSmallAt2X.jpg",
-  "format": "threeByTwoSmallAt2X",
-  "height": 400,
-  "width": 600,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "The original Angel’s Share closed a year ago.",
-  "copyright": "Haruka Sakaguchi for The New York Times"
-  },
-  {
-  "url": "https://static01.nyt.com/images/2023/03/03/multimedia/00angels-share-fcjg/00angels-share-fcjg-thumbLarge.jpg",
-  "format": "Large Thumbnail",
-  "height": 150,
-  "width": 150,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "The original Angel’s Share closed a year ago.",
-  "copyright": "Haruka Sakaguchi for The New York Times"
-  }
-  ],
-  "short_url": "https://nyti.ms/3ZqmYTv"
-}, 
-
-{
-  "section": "dining",
-  "subsection": "",
-  "title": "Restaurant Review: At Okiboru, Soupless Ramen in a Stressless Setting",
-  "abstract": "A new noodle shop brings the specialty ramen known as tsukemen to the Lower East Side, along with a speedy, efficient serving system.",
-  "url": "https://www.nytimes.com/2023/03/07/dining/okiboru-restaurant-review.html",
-  "uri": "nyt://article/7f1dd24b-cb01-5d47-867b-fc1855685ba3",
-  "byline": "By Pete Wells",
-  "item_type": "Article",
-  "updated_date": "2023-03-07T23:31:44-05:00",
-  "created_date": "2023-03-07T15:20:12-05:00",
-  "published_date": "2023-03-07T15:20:12-05:00",
-  "material_type_facet": "",
-  "kicker": "",
-  "des_facet": [
-  "Noodles",
-  "Restaurants"
-  ],
-  "org_facet": [
-  "Okiboru (Manhattan, NY Restaurant)"
-  ],
-  "per_facet": [ ],
-  "geo_facet": [
-  "Lower East Side (Manhattan, NY)"
-  ],
-  "multimedia": [
-  {
-  "url": "https://static01.nyt.com/images/2023/03/03/multimedia/00rest-okiboru-01-fmqb/00rest-okiboru-01-fmqb-superJumbo.jpg",
-  "format": "Super Jumbo",
-  "height": 1365,
-  "width": 2048,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "The first step in eating tsukemen is to raise the noodles high, then lower them into a concentrated broth.",
-  "copyright": "Lanna Apisukh for The New York Times"
-  },
-  {
-  "url": "https://static01.nyt.com/images/2023/03/03/multimedia/00rest-okiboru-01-fmqb/00rest-okiboru-01-fmqb-threeByTwoSmallAt2X.jpg",
-  "format": "threeByTwoSmallAt2X",
-  "height": 400,
-  "width": 600,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "The first step in eating tsukemen is to raise the noodles high, then lower them into a concentrated broth.",
-  "copyright": "Lanna Apisukh for The New York Times"
-  },
-  {
-  "url": "https://static01.nyt.com/images/2023/03/03/multimedia/00rest-okiboru-01-fmqb/00rest-okiboru-01-fmqb-thumbLarge.jpg",
-  "format": "Large Thumbnail",
-  "height": 150,
-  "width": 150,
-  "type": "image",
-  "subtype": "photo",
-  "caption": "The first step in eating tsukemen is to raise the noodles high, then lower them into a concentrated broth.",
-  "copyright": "Lanna Apisukh for The New York Times"
-  }
-  ],
-  "short_url": "https://nyti.ms/3kNvpJD"
-  }
-
-]
+    {
+      "section": "arts",
+      "subsection": "dance",
+      "title": "The Passion of Adèle Haenel, an Artist of Fierce Political Conviction",
+      "abstract": "Haenel, working with the choreographer-director Gisèle Vienne in “L’Étang,” is trying to “pierce through the surface of things.”",
+      "url": "https://www.nytimes.com/2023/10/18/arts/dance/adele-haenel-gisele-vienne-letang.html",
+      "uri": "nyt://article/7feced80-2937-5137-8834-cb42164b0f8d",
+      "byline": "By Elisabeth Vincentelli",
+      "item_type": "Article",
+      "updated_date": "2023-10-18T17:10:28-04:00",
+      "created_date": "2023-10-18T15:38:08-04:00",
+      "published_date": "2023-10-18T15:38:08-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Theater",
+        "Actors and Actresses",
+        "Dancing",
+        "#MeToo Movement",
+        "Content Type: Personal Profile",
+        "L'Etang (Play)"
+      ],
+      "org_facet": ["PS21 (Chatham, NY)", "New York Live Arts"],
+      "per_facet": [
+        "Haenel, Adele (1989- )",
+        "Vienne, Gisele",
+        "Walser, Robert"
+      ],
+      "geo_facet": ["Chatham (NY)", "France"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/10/19/multimedia/19adele-haenel-01-fwcz/19adele-haenel-01-fwcz-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 2048,
+          "width": 1366,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Adèle Haenel on the grounds of PS21 in Chatham, N.Y., where she was appearing in “L’Étang.”",
+          "copyright": "Lauren Lancaster for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/19/multimedia/19adele-haenel-01-fwcz/19adele-haenel-01-fwcz-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Adèle Haenel on the grounds of PS21 in Chatham, N.Y., where she was appearing in “L’Étang.”",
+          "copyright": "Lauren Lancaster for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/19/multimedia/19adele-haenel-01-fwcz/19adele-haenel-01-fwcz-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Adèle Haenel on the grounds of PS21 in Chatham, N.Y., where she was appearing in “L’Étang.”",
+          "copyright": "Lauren Lancaster for The New York Times"
+        }
+      ],
+      "short_url": ""
+    },
+    {
+      "section": "arts",
+      "subsection": "design",
+      "title": "Ann Philbin, Who Remade L.A.’s Hammer Museum, to Step Down",
+      "abstract": "In nearly 25 years at the helm, Philbin helped transform the museum and elevate its reputation, and left a mark on the cultural landscape of Los Angeles.",
+      "url": "https://www.nytimes.com/2023/10/18/arts/design/ann-philbin-hammer-museum.html",
+      "uri": "nyt://article/b5081d31-7193-59d4-9fb5-f8815a17c14d",
+      "byline": "By Robin Pogrebin",
+      "item_type": "Article",
+      "updated_date": "2023-10-18T13:52:07-04:00",
+      "created_date": "2023-10-18T13:30:15-04:00",
+      "published_date": "2023-10-18T13:30:15-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Museums", "Art"],
+      "org_facet": ["Lulu (Los Angeles, Calif, Restaurant)", "Hammer Museum"],
+      "per_facet": [
+        "Philbin, Ann",
+        "Kruger, Barbara",
+        "Bradford, Mark (1961- )"
+      ],
+      "geo_facet": ["Los Angeles (Calif)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/10/18/multimedia/18hammer-01-kvcl/18hammer-01-kvcl-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Ann Philbin in the lobby of the Hammer Museum earlier this year when it completed a $90 million renovation.",
+          "copyright": "Ye Rin Mok for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/18/multimedia/18hammer-01-kvcl/18hammer-01-kvcl-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Ann Philbin in the lobby of the Hammer Museum earlier this year when it completed a $90 million renovation.",
+          "copyright": "Ye Rin Mok for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/18/multimedia/18hammer-01-kvcl/18hammer-01-kvcl-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Ann Philbin in the lobby of the Hammer Museum earlier this year when it completed a $90 million renovation.",
+          "copyright": "Ye Rin Mok for The New York Times"
+        }
+      ],
+      "short_url": ""
+    },
+    {
+      "section": "movies",
+      "subsection": "",
+      "title": "‘The Exorcist’ at 50: How One Horror Movie Shocked the World",
+      "abstract": "Could a movie about a girl possessed by the devil really have caused audience members to faint and lose their lunch at theaters?",
+      "url": "https://www.nytimes.com/interactive/2023/10/17/movies/the-exorcist-50th-anniversary.html",
+      "uri": "nyt://interactive/9e9ab9ad-8d93-59e9-824a-18981ea8c272",
+      "byline": "By Manohla Dargis, Jason Zinoman and Erik Piepenburg",
+      "item_type": "Interactive",
+      "updated_date": "2023-10-18T14:04:27-04:00",
+      "created_date": "2023-10-17T18:39:51-04:00",
+      "published_date": "2023-10-17T18:39:51-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["vis-design"],
+      "org_facet": [],
+      "per_facet": [
+        "Blair, Linda",
+        "Blatty, William Peter",
+        "Friedkin, William"
+      ],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/10/17/arts/exorcist-promo-still/exorcist-promo-still-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "UPI TV News/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/17/arts/exorcist-promo-still/exorcist-promo-still-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "UPI TV News/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/17/arts/exorcist-promo-still/exorcist-promo-still-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "UPI TV News/Associated Press"
+        }
+      ],
+      "short_url": ""
+    }
+  ]
 }

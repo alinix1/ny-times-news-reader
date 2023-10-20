@@ -1,19 +1,22 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import logo from "../../assets/nyt-logo.png";
+import logo from "../../assets/nyt-logo.jpg";
+import timesSquareVideo from "../../assets/times_square_nyc.mp4";
 import "./Header.css";
-import SearchBar from "../SearchBar/SearchBar";
 
 const Header = () => {
   return (
     <header className="header-container">
-      <NavLink to="/">
-        <h1 className="header-title">NY Times News</h1>
+      <div className="video-container">
+        <video autoPlay loop muted className="background-video">
+          <source src={timesSquareVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h1 className="header-title" style={{ fontSize: "40px" }}>
+          NY Times News
+        </h1>
         <div className="logo-container">
           <img className="nyt-logo" src={logo} alt="New York Times logo" />
         </div>
-      </NavLink>
-      <SearchBar />
+      </div>
     </header>
   );
 };

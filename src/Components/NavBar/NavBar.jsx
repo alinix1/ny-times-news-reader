@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+// import SearchBar from "../SearchBar/SearchBar";
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -46,6 +47,12 @@ const NavBar = () => {
         to="/health"
       >
         Health News
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => (isActive ? active : undefined)}
+        to="/about"
+      >
+        About
       </NavLink>
     </nav>
   );

@@ -1,24 +1,38 @@
-.header-container a {
+.header-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: #000;
-  text-decoration: none;
-  border-top: 0.5rem solid #ececec;
-  border-bottom: 0.5rem solid #ececec;
-  height: 100%;
-  width: 100%;
+  justify-content: space-between;
+  background-color: #f2790f;
+  padding: 2rem;
+  position: relative;
 }
 
 .header-title {
-  text-align: center;
-  font-size: 3rem;
-  margin-right: 2%;
+  text-transform: uppercase;
   font-family: "Noticia Text, sans-serif";
-  color: #fff;
+  color: #000;
+  margin: 0;
+  flex: 1;
 }
 
 .nyt-logo {
-  height: 6rem;
+  height: 4rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.video-container {
+  text-align: center;
+  position: relative;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.background-video {
+  width: 100%;
+  height: auto;
 }

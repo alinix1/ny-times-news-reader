@@ -1,1 +1,55 @@
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #404040;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
 
+.article-container:hover {
+  transform: translateY(-1rem) scale(1.01);
+}
+
+.article-container > button {
+  border: none;
+  padding: 0;
+  margin: 0 0 8px 0;
+  background: none;
+  cursor: pointer;
+}
+
+.article-container > h2 {
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.article-container > p {
+  width: 100%;
+  margin: 0 0 8px 0;
+}
+
+.article-img {
+  width: 15rem;
+  height: 15rem;
+  transform: translateX(1rem) scale(1);
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transition: all 0.5s;
+}
+
+.article-img:hover {
+  opacity: 1;
+  filter: blur(3px) brightness(80%);
+}
+
+h2,
+p {
+  font-family: "Noticia Text, sans-serif";
+}

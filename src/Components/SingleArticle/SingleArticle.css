@@ -1,0 +1,8 @@
+.article-details-container {
+  margin: 20px;
+}
+
+.largeImage {
+  width: 75vw;
+  max-width: 600px;
+}
