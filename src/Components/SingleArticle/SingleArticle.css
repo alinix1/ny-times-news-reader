@@ -12,3 +12,23 @@
   max-width: 800px;
   border-radius: 3px;
 }
+
+.details-caption {
+  font-size: 1rem;
+}
+
+.details-title {
+  font-size: 2rem;
+}
+
+.details-byline {
+  font-size: 1.5rem;
+}
+
+.details-abstract {
+  font-size: 1.2rem;
+}
+
+.link-details {
+  font-size: 1.2rem;
+}

@@ -10,7 +10,7 @@ const SingleArticle = ({ selectedCategory }) => {
         src={largeImage.url}
         alt={largeImage.copyright}
       />
-      <p className="caption">{largeImage.caption}</p>
+      <p className="details-caption">{largeImage.caption}</p>
       <h2 className="details-title">{title}</h2>
       <p className="details-byline">{byline}</p>
       <p className="details-abstract">{abstract}</p>
