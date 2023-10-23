@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./ArticleCard.css";
 
 const ArticleCard = ({ article, setSelectedCategory }) => {
-  const { title, byline, thumbnailImage, id } = article;
+  const { title, byline, thumbnailImage, publishedDate } = article;
 
   const clickHandler = () => {
     setSelectedCategory(article);
@@ -11,7 +11,7 @@ const ArticleCard = ({ article, setSelectedCategory }) => {
   return (
     <article className="article-container">
       <Link
-        to={`/article/${id}`}
+        to={`/article/${publishedDate}`}
         title="Article Details"
         onClick={clickHandler}
       >

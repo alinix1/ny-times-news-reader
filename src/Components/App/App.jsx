@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router";
+import { Routes, Route, useParams } from "react-router";
 import Header from "../Header/Header";
 import NavBar from "../NavBar/NavBar";
 import ArticleList from "../ArticleList/ArticleList";
 import About from "../About/About";
 import SingleArticle from "../SingleArticle/SingleArticle";
-import { useParams } from "react-router";
 import { fetchArticlesData } from "../../apiCalls";
 import "./App.css";
 
