@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Routes, Route, useParams } from "react-router";
 import Header from "../Header/Header";
 import NavBar from "../NavBar/NavBar";
+// import SearchBar from "../SearchBar/SearchBar";
 import ArticleList from "../ArticleList/ArticleList";
 import About from "../About/About";
 import SingleArticle from "../SingleArticle/SingleArticle";

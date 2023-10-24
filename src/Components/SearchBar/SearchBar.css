@@ -1,8 +1,8 @@
-/* .home-button,
+.home-button,
 .home-button:link,
 .home-button:visited {
   display: inline-block;
-  background-color: #fff9db;
+  background-color: #a904bf;
   text-decoration: none;
   font-size: 1rem;
   border: none;
@@ -16,7 +16,7 @@
 
 .home-button:hover,
 .home-button:active {
-  background-color: #fff;
+  background-color: #a904bf;
 }
 
 .search {
@@ -25,4 +25,4 @@
   border: none;
   border-radius: 5px;
   margin-right: 7rem;
-} */
+}
