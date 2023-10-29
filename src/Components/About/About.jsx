@@ -5,15 +5,19 @@ import nyt from "../../assets/nyt.jpg";
 
 const About = () => {
   return (
-    <section className="section-about">
-      <h1 className="about-title">About</h1>
+    <section className="section-about" data-test="section-about">
+      <h1 className="about-title" data-test="about-title">
+        About
+      </h1>
       <div className="u-center-text u-margin-bottom-big">
-        <h2 className="heading-secondary">This is not a fake news source</h2>
+        <h2 className="heading-secondary" data-test="heading-secondary">
+          This is not a fake news source
+        </h2>
       </div>
 
       <div className="row">
         <div className="col-1-of-2">
-          <p className="about-paragraph">
+          <p className="about-paragraph" data-test="about-paragraph">
             This is a news application that provides a news feed with a default
             "home" page along with tabs for other news sections or categories to
             choose from. Visit NY Times News to see a list of the top news
@@ -29,18 +33,21 @@ const About = () => {
               src={newspaper}
               alt="reading newspaper"
               className="composition-photo composition-photo-p1"
+              data-test="reading-newspaper"
               style={{ width: "300px", height: "250px" }}
             />
             <img
               src={typewriter}
               alt="typewriter"
               className="composition-photo composition-photo-p2"
+              data-test="typewriter"
               style={{ width: "300px", height: "250px" }}
             />
             <img
               src={nyt}
               alt="new york times headquarters"
               className="composition-photo composition-photo-p3"
+              data-test="new york times headquarters"
               style={{ width: "300px", height: "250px" }}
             />
           </div>

@@ -1,0 +1,66 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+  "section": "Food",
+  "last_updated": "2023-10-26T14:31:20-04:00",
+  "num_results": 39,
+  "results": [
+    {
+      "section": "dining",
+      "subsection": "",
+      "title": "Mom’s Favorite Chicken Dinner Gets a Makeover",
+      "abstract": "Melissa Clark takes mustardy, bread crumb-laden thighs to new heights.",
+      "url": "https://www.nytimes.com/2023/10/26/dining/moms-favorite-chicken-thighs-dinner-recipe.html",
+      "uri": "nyt://article/6a340678-f039-571c-a41c-f410eb537aa2",
+      "byline": "By Melissa Clark",
+      "item_type": "Article",
+      "updated_date": "2023-10-26T14:29:09-04:00",
+      "created_date": "2023-10-26T14:29:09-04:00",
+      "published_date": "2023-10-26T14:29:09-04:00",
+      "material_type_facet": "",
+      "kicker": "A Good Appetite",
+      "des_facet": [
+        "Poultry",
+        "Cooking and Cookbooks",
+        "Mustard",
+        "Content Type: Service"
+      ],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/11/01/multimedia/26appetite-chicken-crumbs1-wglv/26appetite-chicken-crumbs1-wglv-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Panko makes this bread crumb-coated chicken especially crisp, but you can also use regular bread crumbs in a pinch.",
+          "copyright": "Bobbi Lin for The New York Times.Food Stylist: Maggie Ruggiero."
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/11/01/multimedia/26appetite-chicken-crumbs1-wglv/26appetite-chicken-crumbs1-wglv-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Panko makes this bread crumb-coated chicken especially crisp, but you can also use regular bread crumbs in a pinch.",
+          "copyright": "Bobbi Lin for The New York Times.Food Stylist: Maggie Ruggiero."
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/11/01/multimedia/26appetite-chicken-crumbs1-wglv/26appetite-chicken-crumbs1-wglv-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Panko makes this bread crumb-coated chicken especially crisp, but you can also use regular bread crumbs in a pinch.",
+          "copyright": "Bobbi Lin for The New York Times.Food Stylist: Maggie Ruggiero."
+        }
+      ],
+      "short_url": ""
+    }
+  ]
+}

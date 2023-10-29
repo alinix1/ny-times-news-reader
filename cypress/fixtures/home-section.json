@@ -1,0 +1,67 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+  "section": "home",
+  "last_updated": "2023-10-28T22:47:03-04:00",
+  "num_results": 22,
+  "results": [
+    {
+      "section": "world",
+      "subsection": "middleeast",
+      "title": "‘You Think of Dying at Any Time’",
+      "abstract": "Gaza residents say Israeli airstrikes come mostly without warning and hit indiscriminately, leading to the feeling that death is imminent and inevitable.",
+      "url": "https://www.nytimes.com/2023/10/28/world/middleeast/gaza-israel-airstrikes-palestinians.html",
+      "uri": "nyt://article/1b94ec4f-01f9-517f-aeb3-a19c989340cd",
+      "byline": "By Raja Abdulrahim",
+      "item_type": "Article",
+      "updated_date": "2023-10-28T15:54:21-04:00",
+      "created_date": "2023-10-28T13:01:53-04:00",
+      "published_date": "2023-10-28T13:01:53-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Israel-Gaza War (2023- )",
+        "Civilian Casualties",
+        "Deaths (Fatalities)",
+        "War and Armed Conflicts",
+        "Palestinians"
+      ],
+      "org_facet": ["Hamas"],
+      "per_facet": [],
+      "geo_facet": ["Gaza Strip", "Israel", "Khan Younis (Gaza Strip)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/10/28/multimedia/28gaza-fear01-new-bgzh/28gaza-fear01-new-bgzh-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Olfat al-Kurd with her family at a displacement camp in Khan Younis in southern Gaza on Thursday.",
+          "copyright": "Samar Abu Elouf for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/28/multimedia/28gaza-fear01-new-bgzh/28gaza-fear01-new-bgzh-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Olfat al-Kurd with her family at a displacement camp in Khan Younis in southern Gaza on Thursday.",
+          "copyright": "Samar Abu Elouf for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/28/multimedia/28gaza-fear01-new-bgzh/28gaza-fear01-new-bgzh-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Olfat al-Kurd with her family at a displacement camp in Khan Younis in southern Gaza on Thursday.",
+          "copyright": "Samar Abu Elouf for The New York Times"
+        }
+      ],
+      "short_url": ""
+    }
+  ]
+}

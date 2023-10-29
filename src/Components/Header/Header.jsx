@@ -4,14 +4,29 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <header className="header-container">
-      <img className="nyt-logo" src={logo} alt="New York Times logo" />
+    <header className="header-container" data-test="header-container">
+      <img
+        className="nyt-logo"
+        data-test="logo"
+        src={logo}
+        alt="New York Times logo"
+      />
       <div className="video-container">
-        <video autoPlay loop muted className="background-video">
+        <video
+          autoPlay
+          loop
+          muted
+          className="background-video"
+          data-test="background-video"
+        >
           <source src={timesSquareVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <h1 className="header-title" style={{ fontSize: "40px" }}>
+        <h1
+          className="header-title"
+          data-test="header-title"
+          style={{ fontSize: "40px" }}
+        >
           NY Times News
         </h1>
       </div>
