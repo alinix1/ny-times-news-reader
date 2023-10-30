@@ -2,63 +2,196 @@
   "status": "OK",
   "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
   "section": "home",
-  "last_updated": "2023-10-28T22:47:03-04:00",
-  "num_results": 22,
+  "last_updated": "2023-10-30T14:40:27-04:00",
+  "num_results": 27,
   "results": [
     {
       "section": "world",
       "subsection": "middleeast",
-      "title": "‘You Think of Dying at Any Time’",
-      "abstract": "Gaza residents say Israeli airstrikes come mostly without warning and hit indiscriminately, leading to the feeling that death is imminent and inevitable.",
-      "url": "https://www.nytimes.com/2023/10/28/world/middleeast/gaza-israel-airstrikes-palestinians.html",
-      "uri": "nyt://article/1b94ec4f-01f9-517f-aeb3-a19c989340cd",
-      "byline": "By Raja Abdulrahim",
+      "title": "‘A Very Slow Game:’ Why the Pace of Israel’s Ground Operation Counts",
+      "abstract": "Israel’s invasion of Gaza is proceeding more slowly than expected. That may suit the needs of its allies — and its adversaries, analysts say.",
+      "url": "https://www.nytimes.com/2023/10/30/world/middleeast/israel-ground-operation.html",
+      "uri": "nyt://article/b5d01420-5dbb-59ff-a4fa-34db81c09952",
+      "byline": "By Mark Landler",
       "item_type": "Article",
-      "updated_date": "2023-10-28T15:54:21-04:00",
-      "created_date": "2023-10-28T13:01:53-04:00",
-      "published_date": "2023-10-28T13:01:53-04:00",
+      "updated_date": "2023-10-30T14:09:38-04:00",
+      "created_date": "2023-10-30T14:09:38-04:00",
+      "published_date": "2023-10-30T14:09:38-04:00",
       "material_type_facet": "",
-      "kicker": "",
+      "kicker": "News Analysis",
       "des_facet": [
+        "International Relations",
         "Israel-Gaza War (2023- )",
+        "Terrorism",
         "Civilian Casualties",
-        "Deaths (Fatalities)",
-        "War and Armed Conflicts",
-        "Palestinians"
+        "Defense and Military Forces"
       ],
-      "org_facet": ["Hamas"],
+      "org_facet": ["Hamas", "Hezbollah", "General Assembly (UN)"],
       "per_facet": [],
-      "geo_facet": ["Gaza Strip", "Israel", "Khan Younis (Gaza Strip)"],
+      "geo_facet": [
+        "Beirut (Lebanon)",
+        "Gaza Strip",
+        "Iran",
+        "Israel",
+        "Great Britain",
+        "United States",
+        "United Arab Emirates"
+      ],
       "multimedia": [
         {
-          "url": "https://static01.nyt.com/images/2023/10/28/multimedia/28gaza-fear01-new-bgzh/28gaza-fear01-new-bgzh-superJumbo.jpg",
+          "url": "https://static01.nyt.com/images/2023/10/30/multimedia/30israel-geopolitics-gkfz/30israel-geopolitics-gkfz-superJumbo.jpg",
           "format": "Super Jumbo",
           "height": 1365,
           "width": 2048,
           "type": "image",
           "subtype": "photo",
-          "caption": "Olfat al-Kurd with her family at a displacement camp in Khan Younis in southern Gaza on Thursday.",
-          "copyright": "Samar Abu Elouf for The New York Times"
+          "caption": "A pro-Palestinian rally in New York City on Saturday.",
+          "copyright": "Victor J. Blue for The New York Times"
         },
         {
-          "url": "https://static01.nyt.com/images/2023/10/28/multimedia/28gaza-fear01-new-bgzh/28gaza-fear01-new-bgzh-threeByTwoSmallAt2X.jpg",
+          "url": "https://static01.nyt.com/images/2023/10/30/multimedia/30israel-geopolitics-gkfz/30israel-geopolitics-gkfz-threeByTwoSmallAt2X.jpg",
           "format": "threeByTwoSmallAt2X",
           "height": 400,
           "width": 600,
           "type": "image",
           "subtype": "photo",
-          "caption": "Olfat al-Kurd with her family at a displacement camp in Khan Younis in southern Gaza on Thursday.",
-          "copyright": "Samar Abu Elouf for The New York Times"
+          "caption": "A pro-Palestinian rally in New York City on Saturday.",
+          "copyright": "Victor J. Blue for The New York Times"
         },
         {
-          "url": "https://static01.nyt.com/images/2023/10/28/multimedia/28gaza-fear01-new-bgzh/28gaza-fear01-new-bgzh-thumbLarge.jpg",
+          "url": "https://static01.nyt.com/images/2023/10/30/multimedia/30israel-geopolitics-gkfz/30israel-geopolitics-gkfz-thumbLarge.jpg",
           "format": "Large Thumbnail",
           "height": 150,
           "width": 150,
           "type": "image",
           "subtype": "photo",
-          "caption": "Olfat al-Kurd with her family at a displacement camp in Khan Younis in southern Gaza on Thursday.",
-          "copyright": "Samar Abu Elouf for The New York Times"
+          "caption": "A pro-Palestinian rally in New York City on Saturday.",
+          "copyright": "Victor J. Blue for The New York Times"
+        }
+      ],
+      "short_url": ""
+    },
+    {
+      "section": "business",
+      "subsection": "economy",
+      "title": "Autoworkers Score Big Wins in New Contracts With Carmakers",
+      "abstract": "Tentative accords at Ford Motor, General Motors and Stellantis are the most generous in decades, raising costs as the industry shifts to electric vehicles.",
+      "url": "https://www.nytimes.com/2023/10/30/business/economy/gm-uaw-contract-deal.html",
+      "uri": "nyt://article/cf983e63-cd00-561d-80da-67ee8daeffb7",
+      "byline": "By Neal E. Boudette and Jack Ewing",
+      "item_type": "Article",
+      "updated_date": "2023-10-30T13:37:08-04:00",
+      "created_date": "2023-10-30T09:55:35-04:00",
+      "published_date": "2023-10-30T09:55:35-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Automobiles",
+        "Organized Labor",
+        "Strikes",
+        "Electric and Hybrid Vehicles",
+        "Labor and Jobs",
+        "Wages and Salaries",
+        "Factories and Manufacturing"
+      ],
+      "org_facet": [
+        "General Motors",
+        "Ford Motor Co",
+        "Stellantis NV",
+        "United Automobile Workers",
+        "Tesla Motors Inc",
+        "Toyota Motor Corp",
+        "Honda Motor Co Ltd"
+      ],
+      "per_facet": ["Barra, Mary T", "Fain, Shawn"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/10/27/multimedia/00uaw-gm-1-gfhv/00uaw-gm-1-gfhv-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The United Automobile Workers union escalated its strike against General Motors as recently as Saturday. Earlier it struck the company’s largest plant, in Arlington, Texas.",
+          "copyright": "Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/27/multimedia/00uaw-gm-1-gfhv/00uaw-gm-1-gfhv-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The United Automobile Workers union escalated its strike against General Motors as recently as Saturday. Earlier it struck the company’s largest plant, in Arlington, Texas.",
+          "copyright": "Reuters"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/27/multimedia/00uaw-gm-1-gfhv/00uaw-gm-1-gfhv-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The United Automobile Workers union escalated its strike against General Motors as recently as Saturday. Earlier it struck the company’s largest plant, in Arlington, Texas.",
+          "copyright": "Reuters"
+        }
+      ],
+      "short_url": ""
+    },
+    {
+      "section": "us",
+      "subsection": "politics",
+      "title": "How Trump’s Verbal Slips Could Weaken His Attacks on Biden’s Age",
+      "abstract": "Donald Trump, 77, has relentlessly attacked President Biden, 80, as too old for office. But the former president himself has had a series of gaffes that go beyond his usual freewheeling style.",
+      "url": "https://www.nytimes.com/2023/10/30/us/politics/trump-biden-age.html",
+      "uri": "nyt://article/57aec20d-e82f-50b9-bbc9-b646822151a0",
+      "byline": "By Michael C. Bender and Michael Gold",
+      "item_type": "Article",
+      "updated_date": "2023-10-30T10:33:13-04:00",
+      "created_date": "2023-10-30T05:02:10-04:00",
+      "published_date": "2023-10-30T05:02:10-04:00",
+      "material_type_facet": "",
+      "kicker": "Political Memo",
+      "des_facet": [
+        "Age, Chronological",
+        "Presidential Election of 2024",
+        "Polls and Public Opinion",
+        "United States Politics and Government"
+      ],
+      "org_facet": ["Republican Party"],
+      "per_facet": ["Trump, Donald J", "Biden, Joseph R Jr"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/10/29/multimedia/29pol-trump-age-bfzm/29pol-trump-age-bfzm-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1410,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Former President Donald J. Trump’s Republican presidential rivals have seized on several recent stumbles in his public speeches. ",
+          "copyright": "Sophie Park for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/29/multimedia/29pol-trump-age-bfzm/29pol-trump-age-bfzm-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Former President Donald J. Trump’s Republican presidential rivals have seized on several recent stumbles in his public speeches. ",
+          "copyright": "Sophie Park for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/29/multimedia/29pol-trump-age-bfzm/29pol-trump-age-bfzm-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Former President Donald J. Trump’s Republican presidential rivals have seized on several recent stumbles in his public speeches. ",
+          "copyright": "Sophie Park for The New York Times"
         }
       ],
       "short_url": ""

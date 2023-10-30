@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-// import SearchBar from "../SearchBar/SearchBar";
 import homeIcon from "../../assets/home.jpg";
 import usIcon from "../../assets/us.jpg";
 import worldIcon from "../../assets/world.jpg";

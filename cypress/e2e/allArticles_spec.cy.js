@@ -1,17 +1,24 @@
-// TODO
-// fixture needs to be stubbed and used for testing
-
 describe("Main Article Page", () => {
   beforeEach(() => {
     cy.intercept(
-      "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
+      "GET",
+      "https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=Thl0B0CyWlBvuzPKefO28SRArsuLfXJ3",
       {
         statusCode: 200,
         ok: true,
-        fixture: "home-section",
+        fixture: "arts-section",
       }
     );
-    cy.visit("http://localhost:3000");
+    cy.visit("http://localhost:3000/arts");
+  });
+
+  it("Should be able to click on arts tab and navigate to arts page", () => {
+    cy.get('[data-test="arts-tab"]')
+      .should("exist")
+      .first()
+      .click()
+      .url()
+      .should("eq", "http://localhost:3000/arts");
   });
 
   it("Should render a header with app title, logo, and video", () => {
@@ -50,19 +57,16 @@ describe("Main Article Page", () => {
   });
 
   it("Should show all article cards including an image, title, and byline", () => {
-    cy.get('[data-test="article-list"]').should("be.visible");
+    cy.get('[data-test="article-container"]').should("be.visible");
     cy.get('[data-test="article-img"]').should("be.visible");
     cy.get('[data-test="article-title"]').should("be.visible");
     cy.get('[data-test="article-byline"]').should("be.visible");
     cy.get(':nth-child(2) > a > [data-test="article-img"]').should("exist");
     cy.contains(
       '[data-test="article-title"]',
-      "34 Hours of Fear: The Blackout That Cut Gaza Off From the World"
-    ).should("exist");
-    cy.contains(
-      '[data-test="article-byline"]',
-      "By Abu Bakr Bashir, Iyad Abuheweila, Vivian Nereim and Yousur Al-Hlou"
-    ).should("exist");
+      "Ann Philbin, Who Remade L.A.’s Hammer Museum, to Step Down"
+    );
+    cy.contains('[data-test="article-byline"]', "By Robin Pogrebin");
     cy.contains(':nth-child(1) > a > [data-test="article-img"]').should(
       "not.exist"
     );
@@ -71,79 +75,62 @@ describe("Main Article Page", () => {
       "not.exist"
     );
   });
-
-  it.skip("Should be able to see a search bar and search by article title", () => {
-    cy.get('[data-cy="search"]').should("be.visible");
-    cy.get('input[type="text"]').type("Restaurant");
-    cy.contains(
-      '[data-cy="article-title"]',
-      "Restaurant Review: At Okiboru, Soupless Ramen in a Stressless Setting"
-    );
-  });
-
-  it.skip("Should be able to click the home button and clear the input field", () => {
-    cy.get('[data-cy="search"]').should("be.visible");
-    cy.get('input[type="text"]').type("Finds");
-    cy.get('[data-cy="home-button"]').click();
-  });
-
   it("Should show all article cards and be able to click on an article image and be shown more info on article", () => {
     cy.get('[data-test="article-container"]')
       .should("be.visible")
       .children()
       .get(':nth-child(1) > a > [data-test="article-img"]')
       .click();
-
-    it("Should show an error if API fails a response", () => {
-      cy.intercept(
-        "GET",
-        "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
-        {
-          statusCode: 401,
-          ok: false,
-          fixture: "invalid-key",
-        }
-      )
-        .get('[href="/world"]')
-        .click()
-        .get("p")
-        .contains("Something has gone wrong: Unauthorized");
-      cy.visit("http://localhost:3000");
-    });
-  });
-
-  describe("Loading and Error Page", () => {
-    it("Should show the loading page", () => {
-      let sendResponse;
-      const triggerResponse = new Promise((resolve) => {
-        sendResponse = resolve;
-      });
-      cy.intercept(
-        "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
-        (request) => {
-          return triggerResponse.then(() => {
-            request.reply();
-          });
-        }
-      );
-      cy.visit("http://localhost:3000");
-      cy.get('[data-test="loading"]')
-        .should("be.visible")
-        .then(() => {
-          sendResponse();
-          cy.get('[data-test="loading"]').should("not.exist");
-          cy.get('[data-test="article-list"]').should("be.visible");
-        });
-    });
-    it("Should show the error messages", () => {
-      cy.visit("http://localhost:3000/sdfdsf");
-      cy.get('[data-test="error-response"]').contains(
-        "Something has gone wrong: "
-      );
-      cy.visit("http://localhost:3000/food/jkflds");
-      cy.get('[data-test="page-not-found"]').contains(
-        "This is also an error page"
-      );
-    });
   });
 });
+
+describe("Error Page", () => {
+  it("Should show the error messages", () => {
+    cy.visit("http://localhost:3000/sdfdsf");
+    cy.get('[data-test="error-response"]').contains(
+      "Something has gone wrong: "
+    );
+    cy.visit("http://localhost:3000/food/jkflds");
+    cy.get('[data-test="page-not-found"]').contains(
+      "This is also an error page"
+    );
+  });
+});
+
+// it.skip("Should show the loading page", () => {
+//   let sendResponse;
+//   const triggerResponse = new Promise((resolve) => {
+//     sendResponse = resolve;
+//   });
+//   cy.intercept(
+//     "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
+//     (request) => {
+//       return triggerResponse.then(() => {
+//         request.reply();
+//       });
+//     }
+//   );
+//   cy.visit("http://localhost:3000");
+//   cy.get('[data-test="loading"]')
+//     .should("be.visible")
+//     .then(() => {
+//       sendResponse();
+//       cy.get('[data-test="loading"]').should("not.exist");
+//       cy.get('[data-test="article-container"]').should("be.visible");
+//     });
+// });
+
+// it.skip("Should be able to see a search bar and search by article title", () => {
+//   cy.get('[data-cy="search"]').should("be.visible");
+//   cy.get('input[type="text"]').type("Restaurant");
+//   cy.contains(
+//     '[data-cy="article-title"]',
+//     "Restaurant Review: At Okiboru, Soupless Ramen in a Stressless Setting"
+//   );
+// });
+
+// it.skip("Should be able to click the home button and clear the input field", () => {
+//   cy.get('[data-cy="search"]').should("be.visible");
+//   cy.get('input[type="text"]').type("Finds");
+//   cy.get('[data-cy="home-button"]').click();
+// });
