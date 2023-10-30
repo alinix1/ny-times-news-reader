@@ -40,9 +40,20 @@ const ArticleList = ({
     }
   };
   if (!articles) {
-    return <img className="loading" src={loading} alt="loading" />;
+    return (
+      <img
+        className="loading"
+        data-test="loading"
+        src={loading}
+        alt="loading"
+      />
+    );
   }
-  return <main className="articleList-container">{makeArticles()}</main>;
+  return (
+    <main className="articleList-container" data-test="article-list">
+      {makeArticles()}
+    </main>
+  );
 };
 
 export default ArticleList;

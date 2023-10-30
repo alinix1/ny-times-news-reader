@@ -2,9 +2,65 @@
   "status": "OK",
   "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
   "section": "Food",
-  "last_updated": "2023-10-26T14:31:20-04:00",
+  "last_updated": "2023-10-28T09:34:54-04:00",
   "num_results": 39,
   "results": [
+    {
+      "section": "dining",
+      "subsection": "",
+      "title": "The Real End of David Chang’s Momofuku Ko Happened Years Ago",
+      "abstract": "The revolutionary tasting-menu restaurant eventually came to resemble the fine-dining titans it tried to dethrone.",
+      "url": "https://www.nytimes.com/2023/10/28/dining/momofuku-ko-closing.html",
+      "uri": "nyt://article/94326b1c-1dd0-568e-b63f-f7da2c745d36",
+      "byline": "By Pete Wells",
+      "item_type": "Article",
+      "updated_date": "2023-10-29T12:49:54-04:00",
+      "created_date": "2023-10-28T05:02:30-04:00",
+      "published_date": "2023-10-28T05:02:30-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Chefs", "Restaurants", "Shutdowns (Institutional)"],
+      "org_facet": [
+        "Momofuku Ko (Manhattan, NY, Restaurant)",
+        "Momofuku Ssam Bar (Manhattan, NY, Restaurant)"
+      ],
+      "per_facet": ["Chang, David (Chef)"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/10/27/multimedia/27momofuku-zfcw/27momofuku-zfcw-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 2046,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Andrea Mohin/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/27/multimedia/27momofuku-zfcw/27momofuku-zfcw-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 399,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Andrea Mohin/The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/27/multimedia/27momofuku-zfcw/27momofuku-zfcw-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "Andrea Mohin/The New York Times"
+        }
+      ],
+      "short_url": ""
+    },
+
     {
       "section": "dining",
       "subsection": "",
@@ -58,6 +114,58 @@
           "subtype": "photo",
           "caption": "Panko makes this bread crumb-coated chicken especially crisp, but you can also use regular bread crumbs in a pinch.",
           "copyright": "Bobbi Lin for The New York Times.Food Stylist: Maggie Ruggiero."
+        }
+      ],
+      "short_url": ""
+    },
+    {
+      "section": "dining",
+      "subsection": "",
+      "title": "Dining’s Past Is on the Menu at Clara in the New-York Historical Society",
+      "abstract": "Kawabun opens its first branch outside Japan, Altair channels the elements and more restaurant news.",
+      "url": "https://www.nytimes.com/2023/10/24/dining/dinings-past-is-on-the-menu-at-clara-in-the-new-york-historical-society.html",
+      "uri": "nyt://article/b2ee7171-d179-52cc-b75c-204425c18670",
+      "byline": "By Florence Fabricant",
+      "item_type": "Article",
+      "updated_date": "2023-10-24T22:48:29-04:00",
+      "created_date": "2023-10-24T15:02:08-04:00",
+      "published_date": "2023-10-24T15:02:08-04:00",
+      "material_type_facet": "",
+      "kicker": "Off the Menu",
+      "des_facet": ["Restaurants"],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": ["Brooklyn (NYC)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2023/10/25/multimedia/24OFF-fkvq/24OFF-fkvq-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1366,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The chef Diego Moya will serve charlotte russe at Clara.",
+          "copyright": "Jeenah Moon for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/25/multimedia/24OFF-fkvq/24OFF-fkvq-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The chef Diego Moya will serve charlotte russe at Clara.",
+          "copyright": "Jeenah Moon for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2023/10/25/multimedia/24OFF-fkvq/24OFF-fkvq-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The chef Diego Moya will serve charlotte russe at Clara.",
+          "copyright": "Jeenah Moon for The New York Times"
         }
       ],
       "short_url": ""

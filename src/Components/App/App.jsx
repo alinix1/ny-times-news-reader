@@ -30,7 +30,7 @@ const App = () => {
   }, [category, setArticles, setError]);
 
   if (error) {
-    return <p>Something has gone wrong: {error}</p>;
+    return <p data-test="error-response">Something has gone wrong: {error}</p>;
   }
 
   return (
@@ -74,7 +74,9 @@ const App = () => {
         <Route
           path="*"
           element={
-            <h3 className="page-not-found">This is also an error page</h3>
+            <h3 className="page-not-found" data-test="page-not-found">
+              This is also an error page
+            </h3>
           }
         />
       </Routes>

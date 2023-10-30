@@ -9,7 +9,7 @@ const ArticleCard = ({ article, setSelectedCategory }) => {
   };
 
   return (
-    <article className="article-container">
+    <article className="article-container" data-test="article-container">
       <Link
         to={`/article/${publishedDate}`}
         title="Article Details"
@@ -17,13 +17,14 @@ const ArticleCard = ({ article, setSelectedCategory }) => {
       >
         <img
           className="article-img"
+          data-test="article-img"
           src={thumbnailImage.url}
           alt={thumbnailImage.copyright}
           style={{ width: 150, height: 150 }}
         />
       </Link>
-      <h2>{title}</h2>
-      <p>{byline}</p>
+      <h2 data-test="article-title">{title}</h2>
+      <p data-test="article-byline">{byline}</p>
     </article>
   );
 };

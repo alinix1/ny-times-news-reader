@@ -1,119 +1,149 @@
-// describe("Main Article Page", () => {
-//   beforeEach(() => {
-//     cy.intercept(
-//       "GET",
-//       "https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
-//       {
-//         statusCode: 200,
-//         ok: true,
-//         fixture: "articles",
-//       }
-//     );
-//     cy.visit("http://localhost:3000");
-//   });
+// TODO
+// fixture needs to be stubbed and used for testing
 
-//   it("Should be able to visit the home page and render the correct elements", () => {
-//     cy.get('[data-cy="title"]').contains("NY Times Reader");
-//     cy.get('[data-cy="nyt-logo"]').should("be.visible");
-//   });
+describe("Main Article Page", () => {
+  beforeEach(() => {
+    cy.intercept(
+      "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
+      {
+        statusCode: 200,
+        ok: true,
+        fixture: "home-section",
+      }
+    );
+    cy.visit("http://localhost:3000");
+  });
 
-//   it("Should show all article cards including a title, and image", () => {
-//     cy.get('[data-cy="card-container"]').should("be.visible");
-//     cy.get('[data-cy="article-img"]').should("be.visible");
-//     cy.get('[data-cy="article-title"]').should("be.visible");
-//     cy.contains(
-//       '[data-cy="article-title"]',
-//       "Inside the ‘Top Chef’ Industrial Complex"
-//     ).should("exist");
-//     cy.contains('[data-cy="article-title"]', "Hello").should("not.exist");
-//   });
+  it("Should render a header with app title, logo, and video", () => {
+    cy.get('[data-test="header-container"]')
+      .contains("NY Times News")
+      .get('[data-test="logo')
+      .get('[data-test="background-video"]');
+  });
 
-//   it("Should be able to see a search bar and search by article title", () => {
-//     cy.get('[data-cy="search"]').should("be.visible");
-//     cy.get('input[type="text"]').type("Restaurant");
-//     cy.contains(
-//       '[data-cy="article-title"]',
-//       "Restaurant Review: At Okiboru, Soupless Ramen in a Stressless Setting"
-//     );
-//   });
+  it("Should render a navigation bar with categories or sections and icons", () => {
+    cy.get('[data-test="nav-bar"]')
+      .get('[data-test="home-tab"]')
+      .get('[data-test="home-icon"]')
+      .should("exist")
+      .get('[data-test="us-tab"]')
+      .get('[data-test="us-icon"]')
+      .should("exist")
+      .get('[data-test="world-tab"]')
+      .get('[data-test="world-icon"]')
+      .should("exist")
+      .get('[data-test="technology-tab"]')
+      .get('[data-test="technology-icon"]')
+      .should("exist")
+      .get('[data-test="arts-tab"]')
+      .get('[data-test="arts-icon"]')
+      .should("exist")
+      .get('[data-test="food-tab"]')
+      .get('[data-test="food-icon"]')
+      .should("exist")
+      .get('[data-test="health-tab"]')
+      .get('[data-test="health-icon"]')
+      .should("exist")
+      .get('[data-test="about-tab"]')
+      .get('[data-test="about-icon"]')
+      .should("exist");
+  });
 
-//   it("Should be able to click the home button and clear the input field", () => {
-//     cy.get('[data-cy="search"]').should("be.visible");
-//     cy.get('input[type="text"]').type("Finds");
-//     cy.get('[data-cy="home-button"]').click();
-//   });
+  it("Should show all article cards including an image, title, and byline", () => {
+    cy.get('[data-test="article-list"]').should("be.visible");
+    cy.get('[data-test="article-img"]').should("be.visible");
+    cy.get('[data-test="article-title"]').should("be.visible");
+    cy.get('[data-test="article-byline"]').should("be.visible");
+    cy.get(':nth-child(2) > a > [data-test="article-img"]').should("exist");
+    cy.contains(
+      '[data-test="article-title"]',
+      "34 Hours of Fear: The Blackout That Cut Gaza Off From the World"
+    ).should("exist");
+    cy.contains(
+      '[data-test="article-byline"]',
+      "By Abu Bakr Bashir, Iyad Abuheweila, Vivian Nereim and Yousur Al-Hlou"
+    ).should("exist");
+    cy.contains(':nth-child(1) > a > [data-test="article-img"]').should(
+      "not.exist"
+    );
+    cy.contains('[data-test="article-title"]', "Hello").should("not.exist");
+    cy.contains('[data-test="article-title"]', "By Danny Myers").should(
+      "not.exist"
+    );
+  });
 
-//   it("Should show all article cards and be able to click on an article and be shown more info on article", () => {
-//     cy.get('[data-cy="cards"]')
-//       .children()
-//       .contains("Inside the ‘Top Chef’ Industrial Complex")
-//       .click();
-//     cy.get('[data-cy="single-article-img"]').should("be.visible");
-//     cy.get('[data-cy="single-article-title"]').should("be.visible");
-//     cy.get('[data-cy="single-article-byline"]').should("be.visible");
-//     cy.get('[data-cy="single-article-abstract"]').should("be.visible");
-//     cy.get('[data-cy="button"]').should("be.visible");
+  it.skip("Should be able to see a search bar and search by article title", () => {
+    cy.get('[data-cy="search"]').should("be.visible");
+    cy.get('input[type="text"]').type("Restaurant");
+    cy.contains(
+      '[data-cy="article-title"]',
+      "Restaurant Review: At Okiboru, Soupless Ramen in a Stressless Setting"
+    );
+  });
 
-//     cy.contains(
-//       '[data-cy="single-article-title"]',
-//       "Inside the ‘Top Chef’ Industrial Complex"
-//     );
-//     cy.contains('[data-cy="single-article-byline"]', "By Brett Anderson");
-//     cy.contains(
-//       '[data-cy="single-article-abstract"]',
-//       "Entering its 20th season, the sprawling Bravo franchise has changed the way Americans eat and become a mirror of the restaurant industry."
-//     );
-//   });
+  it.skip("Should be able to click the home button and clear the input field", () => {
+    cy.get('[data-cy="search"]').should("be.visible");
+    cy.get('input[type="text"]').type("Finds");
+    cy.get('[data-cy="home-button"]').click();
+  });
 
-//   it("Should be able to click on the full article link", () => {
-//     cy.get('[data-cy="cards"]')
-//       .children()
-//       .contains("Inside the ‘Top Chef’ Industrial Complex")
-//       .click();
-//     cy.get('[data-cy="button"]').contains("Full Article").click();
-//   });
+  it("Should show all article cards and be able to click on an article image and be shown more info on article", () => {
+    cy.get('[data-test="article-container"]')
+      .should("be.visible")
+      .children()
+      .get(':nth-child(1) > a > [data-test="article-img"]')
+      .click();
 
-//   it("Should show an error if API fails a response", () => {
-//     cy.intercept(
-//       "GET",
-//       "https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
-//       {
-//         statusCode: 400,
-//         ok: false,
-//         fixture: "error",
-//       }
-//     );
-//     cy.visit("http://localhost:3000");
-//   });
-// });
+    it("Should show an error if API fails a response", () => {
+      cy.intercept(
+        "GET",
+        "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
+        {
+          statusCode: 401,
+          ok: false,
+          fixture: "invalid-key",
+        }
+      )
+        .get('[href="/world"]')
+        .click()
+        .get("p")
+        .contains("Something has gone wrong: Unauthorized");
+      cy.visit("http://localhost:3000");
+    });
+  });
 
-// describe("Loading and Error Page", () => {
-//   it("Should show the loading page", () => {
-//     let sendResponse;
-//     const triggerResponse = new Promise((resolve) => {
-//       sendResponse = resolve;
-//     });
-//     cy.intercept(
-//       "https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
-//       (request) => {
-//         return triggerResponse.then(() => {
-//           request.reply();
-//         });
-//       }
-//     );
-//     cy.visit("http://localhost:3000");
-//     cy.get(".loading-img")
-//       .should("be.visible")
-//       .then(() => {
-//         sendResponse();
-//         cy.get(".loading-img").should("not.exist");
-//         cy.get('[data-cy="card-container"]').should("be.visible");
-//       });
-//   });
-//   it("Should show the error messages", () => {
-//     cy.visit("http://localhost:3000/sdfdsf");
-//     cy.get("h3").contains("404: Page does not exist");
-//     cy.visit("http://localhost:3000/sdfdsf/jkflds");
-//     cy.get("h3").contains("This is also an error page");
-//   });
-// });
+  describe("Loading and Error Page", () => {
+    it("Should show the loading page", () => {
+      let sendResponse;
+      const triggerResponse = new Promise((resolve) => {
+        sendResponse = resolve;
+      });
+      cy.intercept(
+        "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
+        (request) => {
+          return triggerResponse.then(() => {
+            request.reply();
+          });
+        }
+      );
+      cy.visit("http://localhost:3000");
+      cy.get('[data-test="loading"]')
+        .should("be.visible")
+        .then(() => {
+          sendResponse();
+          cy.get('[data-test="loading"]').should("not.exist");
+          cy.get('[data-test="article-list"]').should("be.visible");
+        });
+    });
+    it("Should show the error messages", () => {
+      cy.visit("http://localhost:3000/sdfdsf");
+      cy.get('[data-test="error-response"]').contains(
+        "Something has gone wrong: "
+      );
+      cy.visit("http://localhost:3000/food/jkflds");
+      cy.get('[data-test="page-not-found"]').contains(
+        "This is also an error page"
+      );
+    });
+  });
+});
