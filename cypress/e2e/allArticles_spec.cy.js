@@ -119,18 +119,3 @@ describe("Error Page", () => {
 //       cy.get('[data-test="article-container"]').should("be.visible");
 //     });
 // });
-
-// it.skip("Should be able to see a search bar and search by article title", () => {
-//   cy.get('[data-cy="search"]').should("be.visible");
-//   cy.get('input[type="text"]').type("Restaurant");
-//   cy.contains(
-//     '[data-cy="article-title"]',
-//     "Restaurant Review: At Okiboru, Soupless Ramen in a Stressless Setting"
-//   );
-// });
-
-// it.skip("Should be able to click the home button and clear the input field", () => {
-//   cy.get('[data-cy="search"]').should("be.visible");
-//   cy.get('input[type="text"]').type("Finds");
-//   cy.get('[data-cy="home-button"]').click();
-// });

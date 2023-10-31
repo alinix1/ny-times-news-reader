@@ -1,20 +1,11 @@
-// Screen sizes 
+// Colors
+$background-color: #d9cab8;
+$article-background-color: #404040;
+$header-background-color: #f2790f;
+$nav-background-color: #fff;
 
-$screen-sm: 576px;
-$screen-md: 768px;
-$screen-lg: 992px;
-$screen-xl: 1200px;
-$screen-xxl: 1300px;
-$screen-full: 1400px;
-
-
-// Colors 
-
-// $text-color:
-// $primary-color: 
-// $primary-color-light: 
-// $primary-color-dark: 
-
-// Font sizes
-
-// $default-font-size:
+// Font
+$font-family: "Noticia Text, sans-serif";
+$font-size-large: 1.6rem;
+$font-size-medium: 1.2rem;
+$font-size-small: 1rem;

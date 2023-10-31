@@ -50,7 +50,11 @@ const ArticleList = ({
     );
   }
   return (
-    <main className="articleList-container" data-test="article-list">
+    <main
+      className="articleList-container"
+      data-test="article-list"
+      qa-id="article-list"
+    >
       {makeArticles()}
     </main>
   );
