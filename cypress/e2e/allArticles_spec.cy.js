@@ -95,27 +95,26 @@ describe("Error Page", () => {
       "This is also an error page"
     );
   });
-});
 
-// it.skip("Should show the loading page", () => {
-//   let sendResponse;
-//   const triggerResponse = new Promise((resolve) => {
-//     sendResponse = resolve;
-//   });
-//   cy.intercept(
-//     "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=LU6VCnan2YWTBZv4RkzC0faIiydCEDPL",
-//     (request) => {
-//       return triggerResponse.then(() => {
-//         request.reply();
-//       });
-//     }
-//   );
-//   cy.visit("http://localhost:3000");
-//   cy.get('[data-test="loading"]')
-//     .should("be.visible")
-//     .then(() => {
-//       sendResponse();
-//       cy.get('[data-test="loading"]').should("not.exist");
-//       cy.get('[data-test="article-container"]').should("be.visible");
-//     });
-// });
+  it("Should show the loading page", () => {
+    let sendResponse;
+    const triggerResponse = new Promise((resolve) => {
+      sendResponse = resolve;
+    });
+    cy.intercept(
+      "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=Thl0B0CyWlBvuzPKefO28SRArsuLfXJ3",
+      (request) => {
+        return triggerResponse.then(() => {
+          request.reply();
+        });
+      }
+    );
+    cy.visit("http://localhost:3000");
+    cy.get('[data-test="loading"]')
+      .should("be.visible")
+      .then(() => {
+        sendResponse();
+        cy.get('[data-test="loading"]').should("not.exist");
+      });
+  });
+});
