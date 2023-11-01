@@ -25,22 +25,22 @@ test("there should be a large image, title, byline, abstract, and link", async (
 }) => {
   await page.goto(URL);
 
-  await page.waitForSelector("[qa-id='article-container']:first-child");
-
-  await expect(
-    page.locator("[qa-id='article-container']:first-child")
-  ).toBeVisible();
+  await page.waitForSelector("[qa-id='article-container']:first-child", {});
 
   const articleImage = await page.locator("[qa-id='article-image']").first();
   await articleImage.click();
 
-  await page.waitForSelector("[qa-id='detail-article-img']");
+  await page.waitForSelector("[qa-id='detail-article-img']", {});
 
-  await expect(page.locator("[qa-id='detail-article-title']")).toBeVisible();
-
-  await expect(page.locator("[qa-id='detail-article-byline']")).toBeVisible();
-
-  await expect(page.locator("[qa-id='detail-article-abstract']")).toBeVisible();
+  await expect(page.locator("[qa-id='detail-article-title']")).toBeVisible(
+    "Title element is not visible"
+  );
+  await expect(page.locator("[qa-id='detail-article-byline']")).toBeVisible(
+    "Byline element is not visible"
+  );
+  await expect(page.locator("[qa-id='detail-article-abstract']")).toBeVisible(
+    "Abstract element is not visible"
+  );
 });
 
 test("the user should be able to click on the link and be taken to a new page", async ({
@@ -48,7 +48,7 @@ test("the user should be able to click on the link and be taken to a new page", 
 }) => {
   await page.goto(URL);
 
-  await page.locator("[qa-id='article-container']:first-child");
+  await page.waitForSelector("[qa-id='article-container']:first-child");
 
   await expect(
     page.locator("[qa-id='article-container']:first-child")

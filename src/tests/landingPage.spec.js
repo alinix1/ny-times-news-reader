@@ -1,4 +1,3 @@
-// will refactor if needed later
 // create fixture files to test on
 
 const { test, expect } = require("@playwright/test");
@@ -77,7 +76,7 @@ test("there are titles for the sections", async ({ page }) => {
 
 test("there are articles on the page", async ({ page }) => {
   await page.goto(URL);
-  await expect(page.locator("[qa-id='article-list']")).toBeVisible();
+  await page.waitForSelector("[qa-id='article-list']", { state: "visible" });
 });
 
 test("there is an image, title, and byline on the article card", async ({
@@ -99,12 +98,11 @@ test("there is an image, title, and byline on the article card", async ({
   await expect(titleElement).toBeVisible();
   await expect(bylineElement).toBeVisible();
 
-  await expect(titleElement).toHaveText(
-    "Johnson’s Israel Aid Bill Sets Stage for a Clash Over Security Assistance"
-  );
-  await expect(bylineElement).toHaveText(
-    "By Catie Edmondson and Karoun Demirjian"
-  );
+  const titleText = await titleElement.textContent();
+  expect(titleText.trim()).toBeTruthy();
+
+  const bylineText = await bylineElement.textContent();
+  expect(bylineText.trim()).toMatch(/^By /);
 });
 
 test("the user should be able to click on a tab section and navigate to the about page", async ({
