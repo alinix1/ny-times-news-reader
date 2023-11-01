@@ -1,8 +1,8 @@
 // visual testing implemented where needed
 
 const { test, expect } = require("@playwright/test");
-const fs = require("fs");
-const path = require("path");
+// const fs = require("fs");
+// const path = require("path");
 
 const aboutPage = "http://localhost:3000/about";
 

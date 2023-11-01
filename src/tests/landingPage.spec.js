@@ -1,5 +1,4 @@
 // will refactor if needed later
-// test for click events to detail page
 // create fixture files to test on
 
 const { test, expect } = require("@playwright/test");
@@ -97,12 +96,14 @@ test("there is an image, title, and byline on the article card", async ({
   const bylineElement = await firstArticle.locator("[qa-id='article-byline']");
 
   await expect(imageElement).toBeVisible();
+  await expect(titleElement).toBeVisible();
+  await expect(bylineElement).toBeVisible();
 
   await expect(titleElement).toHaveText(
-    "Under Shroud of Secrecy, Israel Invasion of Gaza Has Begun"
+    "Johnson’s Israel Aid Bill Sets Stage for a Clash Over Security Assistance"
   );
   await expect(bylineElement).toHaveText(
-    "By Patrick Kingsley and Ronen Bergman"
+    "By Catie Edmondson and Karoun Demirjian"
   );
 });
 
