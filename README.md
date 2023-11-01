@@ -40,22 +40,32 @@
 
 <!-- ABOUT THE PROJECT -->
 
+## Component Architecture
+
+![Screenshot 2023-11-01 at 12 59 02 PM](https://user-images.githubusercontent.com/28677929/279774089-7a7f4b64-cbaf-4d6f-bb74-dbd601816751.png)
+
+![Screenshot 2023-11-01 at 12 59 10 PM](https://user-images.githubusercontent.com/28677929/279774196-52e79b4f-e513-4970-8a3f-19cf3c9afbf9.png)
+
 ## About The Project
 
-<!-- provide a few screenshots -->
+<img width="721" alt="Screenshot 2023-11-01 at 1 20 40 PM" src="https://user-images.githubusercontent.com/28677929/279779720-e97887b1-10d6-474f-8532-a8300bee010e.png">
 
-<!-- This is a web application built to provide a particular selection of music to facilitate focus while at work. It was created for the Turing School of Software and Design's Module 3 final showcase project. The goal was to apply the new technologies learned and work within constraints to deliver a product for a niche audience, which helps solve a unique problem. -->
+<img width="1073" alt="Screenshot 2023-11-01 at 1 21 50 PM" src="https://user-images.githubusercontent.com/28677929/279779810-72d13b05-58f1-4361-8b58-b8e358e34e63.png">
+
+<img width="1285" alt="Screenshot 2023-11-01 at 1 23 04 PM" src="https://user-images.githubusercontent.com/28677929/279779909-e80e654c-35ea-45fc-913d-5dd01c048c03.png">
+
+<img width="1419" alt="Screenshot 2023-11-01 at 1 23 43 PM" src="https://user-images.githubusercontent.com/28677929/279780003-3e2de705-bcdf-41bc-a8b9-3f2c4e91151a.png">
+
+This is a web application built to provide a selection of news articles to keep you _in-the-know_ on the top news stories. It allows for an easy way to interact with articles from the New York Times Top Stories API. It features a navigation bar with tabs for categories of articles including a default Home page, US, World, Technology, Arts, Food, Health, and an About page. When a user clicks on an article, the application displays an article overview including a title, author, brief description, and a link to the actual news article on the **The New York Times**.
 
 ### Built With
 
 - ![React][React-shield]
 - ![React Router][React-Router-shield]
 - ![JavaScript][JavaScript-shield]
-- ![CSS][CSS-shield]
 - ![SASS][SASS-shield]
 - ![Cypress][Cypress-shield]
 - ![Playwright][Playwright-shield]
-
 - ![Vercel][Vercel-shield]
 - ![Webpack][Webpack-shield]
 
@@ -101,7 +111,11 @@ node server.js
 
 ## Usage
 
-<!-- Provide a GIF or two -->
+![2023-11-01 13 37 35](https://user-images.githubusercontent.com/28677929/279782521-905f07b5-8377-40ca-9208-9a8f3c7da1d6.gif)
+
+![2023-11-01 13 38 38](https://user-images.githubusercontent.com/28677929/279782842-ccb384bb-e11e-41fa-8b54-25c66004d122.gif)
+
+![2023-11-01 13 39 53](https://user-images.githubusercontent.com/28677929/279783138-f46dfeed-8d0a-4664-ab87-d0977522f021.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,15 +134,13 @@ node server.js
 
 ## Wins:
 
--
--
--
+- Implementation using React Hooks
+- Implementation of smooth CSS animations
+- Successful implementation of Cypress testing for E2E
 
 ## Challenges:
 
--
--
--
+- Learning a new automation testing framework called Playwright
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +149,7 @@ node server.js
 ## Roadmap
 
 - [ ]
-- [ ]
+- [ ] Create a login page
 - [ ]
 
 <!-- ACKNOWLEDGMENTS -->
