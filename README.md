@@ -123,6 +123,16 @@ node server.js
 
 ## Notes
 
+<img width="947" alt="Screenshot 2023-11-01 at 4 46 50 PM" src="https://user-images.githubusercontent.com/28677929/279820424-5e6a2e0a-9e9e-48d1-8f3c-045e305201b1.png">
+
+<img width="846" alt="Screenshot 2023-11-01 at 5 06 32 PM" src="https://user-images.githubusercontent.com/28677929/279821931-e425f84e-cbab-4628-b9af-d09d2bbcd825.png">
+
+<img width="845" alt="Screenshot 2023-11-01 at 5 06 59 PM" src="https://user-images.githubusercontent.com/28677929/279821987-08ba6112-cd94-4538-8a79-e513326ea0b9.png">
+
+<img width="845" alt="Screenshot 2023-11-01 at 5 06 45 PM" src="https://user-images.githubusercontent.com/28677929/279822019-13a5cc63-a76f-4876-aa65-09c0d1b2905b.png">
+
+![Screenshot 2023-11-01 at 4 50 13 PM](https://user-images.githubusercontent.com/28677929/279820581-e0af6aa9-d229-46c5-8779-886fd61132df.png)
+
 ## Feature Overview
 
 - React framework
@@ -141,6 +151,8 @@ node server.js
 ## Challenges:
 
 - Learning a new automation testing framework called Playwright
+- Migrating over from CSS to SCSS
+- Still learning the power behind the useEffect React Hook
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +160,7 @@ node server.js
 
 ## Roadmap
 
-- [ ]
+- [ ] Implement Lazy Loading
 - [ ] Create a login page
 - [ ]
 
@@ -158,7 +170,7 @@ node server.js
 
 Used the following resources during the project:
 
-- [![MDN Docs][mdn-shield]][mdn]
+- [![Udemy][udemy-shield]]
 - [![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
 
 <!-- CONTACT -->
@@ -183,5 +195,4 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url1]: https://www.linkedin.com/in/ali-nix-38b9b9126/
 [turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
-[mdn]: https://developer.mozilla.org/en-US/
-[mdn-shield]: https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white
+[Udemy-shield]: https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white
