@@ -160,9 +160,10 @@ node server.js
 
 ## Roadmap
 
-- [ ] Implement Lazy Loading
+- [ ] Implement Lazy Loading - better performance
 - [ ] Create a login page
-- [ ]
+- [ ] Refactor into TypeScript
+- [ ] Apply unit testing for components using React Testing Library
 
 <!-- ACKNOWLEDGMENTS -->
 
@@ -170,7 +171,7 @@ node server.js
 
 Used the following resources during the project:
 
-- [![Udemy][udemy-shield]]
+- [![Udemy][udemy-shield]][udemy-url1]
 - [![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
 
 <!-- CONTACT -->
@@ -196,3 +197,4 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 [linkedin-url1]: https://www.linkedin.com/in/ali-nix-38b9b9126/
 [turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
 [Udemy-shield]: https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white
+[udemy-url1]: https://www.udemy.com/

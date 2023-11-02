@@ -28,11 +28,9 @@ const App = () => {
       });
   }, [category, setArticles, setError]);
 
-  if (error) {
-    return <p data-test="error-response">Something has gone wrong: {error}</p>;
-  }
-
-  return (
+  return error ? (
+    <p data-test="error-response">Something has gone wrong: {error}</p>
+  ) : (
     <div className="app-container">
       <Header />
       <NavBar />
@@ -65,7 +63,7 @@ const App = () => {
             <SingleArticle
               articles={articles}
               selectedCategory={selectedCategory}
-              setSelectedCategory={setSelectedCategory}
+              // setSelectedCategory={setSelectedCategory}
             />
           }
         />

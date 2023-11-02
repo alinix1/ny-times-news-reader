@@ -7,6 +7,10 @@
   margin: 20px;
 }
 
+.article-not-found {
+  color: black;
+}
+
 .large-img {
   width: 75vw;
   max-width: 800px;

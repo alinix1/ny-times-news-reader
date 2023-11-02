@@ -19,8 +19,8 @@ const NavBar = () => {
       <NavLink
         data-test="home-tab"
         qa-id="home-tab-title"
-        style={({ isActive }) => (isActive ? active : undefined)}
         to="/"
+        style={({ isActive }) => (isActive ? active : undefined)}
       >
         <div className="nav-item" data-test="nav-item" qa-id="nav-item">
           <img

@@ -26,30 +26,19 @@ const ArticleList = ({
       });
   }, [category, setArticles, setError]);
 
-  const makeArticles = () => {
-    if (articles) {
-      return articles.map((article, index) => {
-        return (
+  const makeArticles = () =>
+    articles
+      ? articles.map((article, index) => (
           <ArticleCard
             key={index}
             article={article}
             setSelectedCategory={setSelectedCategory}
           />
-        );
-      });
-    }
-  };
-  if (!articles) {
-    return (
-      <img
-        className="loading"
-        data-test="loading"
-        src={loading}
-        alt="loading"
-      />
-    );
-  }
-  return (
+        ))
+      : null;
+  return !articles ? (
+    <img className="loading" data-test="loading" src={loading} alt="loading" />
+  ) : (
     <main
       className="articleList-container"
       data-test="article-list"

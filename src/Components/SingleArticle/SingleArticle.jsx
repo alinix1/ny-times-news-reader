@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { formatDate } from "../../utilities";
 import "./SingleArticle.css";
 
 const SingleArticle = ({ articles }) => {
@@ -6,13 +7,11 @@ const SingleArticle = ({ articles }) => {
 
   const article = articles.find((article) => article.publishedDate === id);
 
-  if (!article) {
-    return <p>Article not found</p>;
-  }
+  const { title, abstract, url, byline, largeImage, publishedDate } = article;
 
-  const { title, abstract, url, byline, largeImage } = article;
-
-  return (
+  return !article ? (
+    <p>Article not found</p>
+  ) : (
     <section className="article-details-container">
       <img
         className="large-img"
@@ -44,6 +43,13 @@ const SingleArticle = ({ articles }) => {
         qa-id="detail-article-abstract"
       >
         {abstract}
+      </p>
+      <p
+        className="details-article-date"
+        data-test="single-article-date"
+        qa-id="detail-article-date"
+      >
+        {formatDate(publishedDate)}
       </p>
       <p className="link-details" data-test="link-details" qa-id="link-details">
         Read more on{" "}
