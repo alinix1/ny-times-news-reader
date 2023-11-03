@@ -63,7 +63,6 @@ const App = () => {
             <SingleArticle
               articles={articles}
               selectedCategory={selectedCategory}
-              // setSelectedCategory={setSelectedCategory}
             />
           }
         />

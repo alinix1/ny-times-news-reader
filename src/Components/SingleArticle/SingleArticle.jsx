@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import { formatDate } from "../../utilities";
+import PropTypes from "prop-types";
 import "./SingleArticle.css";
 
 const SingleArticle = ({ articles }) => {
   const { id } = useParams();
 
-  const article = articles.find((article) => article.publishedDate === id);
+  const article = articles?.find((article) => article.publishedDate === id);
 
   const { title, abstract, url, byline, largeImage, publishedDate } = article;
 
@@ -62,3 +63,7 @@ const SingleArticle = ({ articles }) => {
 };
 
 export default SingleArticle;
+
+SingleArticle.propTypes = {
+  articles: PropTypes.arrayOf(PropTypes.object),
+};

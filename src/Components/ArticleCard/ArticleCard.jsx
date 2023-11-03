@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ArticleCard.css";
+import PropTypes from "prop-types";
 
 const ArticleCard = ({ article, setSelectedCategory }) => {
   const { title, byline, thumbnailImage, publishedDate } = article;
@@ -39,3 +40,17 @@ const ArticleCard = ({ article, setSelectedCategory }) => {
 };
 
 export default ArticleCard;
+
+ArticleCard.propTypes = {
+  setSelectedCategory: PropTypes.func.isRequired,
+  article: PropTypes.shape({
+    abstract: PropTypes.string,
+    byline: PropTypes.string,
+    largeImage: PropTypes.object,
+    publishedDate: PropTypes.string,
+    section: PropTypes.string,
+    thumbnailImage: PropTypes.object,
+    title: PropTypes.string,
+    url: PropTypes.string,
+  }).isRequired,
+};

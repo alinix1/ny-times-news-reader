@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useParams } from "react-router";
+import PropTypes from "prop-types";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import { fetchArticlesData } from "../../apiCalls";
 import loading from "../../assets/loading.jpg";
@@ -50,3 +51,10 @@ const ArticleList = ({
 };
 
 export default ArticleList;
+
+ArticleList.propTypes = {
+  articles: PropTypes.arrayOf(PropTypes.object),
+  setSelectedCategory: PropTypes.func.isRequired,
+  setArticles: PropTypes.func.isRequired,
+  setError: PropTypes.func.isRequired,
+};
