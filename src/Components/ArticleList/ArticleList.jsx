@@ -21,7 +21,14 @@ const ArticleList = ({
     }
 
     fetchArticlesData(currentCategory)
-      .then((articles) => setArticles(articles))
+      .then((articles) => {
+        const sortedArticles = articles.slice().sort((a, b) => {
+          const dateA = new Date(a.publishedDate);
+          const dateB = new Date(b.publishedDate);
+          return dateB - dateA;
+        });
+        setArticles(sortedArticles);
+      })
       .catch((error) => {
         setError(error.message);
       });
@@ -29,7 +36,7 @@ const ArticleList = ({
 
   const makeArticles = () =>
     articles
-      ? articles.map((article, index) => (
+      ? articles?.map((article, index) => (
           <ArticleCard
             key={index}
             article={article}

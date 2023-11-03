@@ -3,12 +3,13 @@ import { formatDate } from "../../utilities";
 import PropTypes from "prop-types";
 import "./SingleArticle.css";
 
-const SingleArticle = ({ articles }) => {
+const SingleArticle = ({ articles, selectedCategory }) => {
   const { id } = useParams();
 
   const article = articles?.find((article) => article.publishedDate === id);
 
-  const { title, abstract, url, byline, largeImage, publishedDate } = article;
+  const { title, abstract, url, byline, largeImage, publishedDate } =
+    selectedCategory;
 
   return !article ? (
     <p>Article not found</p>
@@ -18,11 +19,11 @@ const SingleArticle = ({ articles }) => {
         className="large-img"
         data-test="single-article-img"
         qa-id="detail-article-img"
-        src={largeImage.url}
-        alt={largeImage.copyright}
+        src={largeImage?.url}
+        alt={largeImage?.copyright}
       />
       <p className="details-caption" data-test="single-article-caption">
-        {largeImage.caption}
+        {largeImage?.caption}
       </p>
       <h2
         className="details-title"
