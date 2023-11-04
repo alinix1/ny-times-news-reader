@@ -56,7 +56,7 @@
 
 <img width="1419" alt="Screenshot 2023-11-01 at 1 23 43 PM" src="https://user-images.githubusercontent.com/28677929/279780003-3e2de705-bcdf-41bc-a8b9-3f2c4e91151a.png">
 
-This is a web application built to provide a selection of news articles to keep you _in-the-know_ on the top news stories. It allows for an easy way to interact with articles from the New York Times Top Stories API. It features a navigation bar with tabs for categories of articles including a default Home page, US, World, Technology, Arts, Food, Health, and an About page. When a user clicks on an article, the application displays an article overview including a title, author, brief description, and a link to the actual news article on the **The New York Times**.
+This is a web application built to provide a selection of news articles to keep you _in-the-know_ on the top news stories. It allows for an easy way to interact with articles from the New York Times Top Stories API. It features a navigation bar with tabs for categories of articles including a default Home page, US, World, Technology, Arts, Food, Health, and an About page. When a user clicks on an article, the application displays an article overview including a title, author, brief description, and a link to the actual news article on the **The New York Times**. All articles are sorted in descending order with the latest news at the top!
 
 ### Built With
 
@@ -137,7 +137,7 @@ node server.js
 
 - React framework
 - React Router
-- E2E Testing with Cypress and Playwright
+- E2E Testing with Cypress and Playwright (gain competency using both)
 - SASS/SCSS
 - Typechecking with PropTypes
 - Deployment on Vercel

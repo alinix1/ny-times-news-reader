@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./ArticleCard.css";
 import PropTypes from "prop-types";
 
 const ArticleCard = ({ article, setSelectedCategory }) => {
   const { title, byline, thumbnailImage, publishedDate } = article;
+  const navigate = useNavigate();
 
   const clickHandler = () => {
     setSelectedCategory(article);
+    navigate(`/article/${publishedDate}`);
   };
 
   return (
@@ -15,20 +17,20 @@ const ArticleCard = ({ article, setSelectedCategory }) => {
       data-test="article-container"
       qa-id="article-container"
     >
-      <Link
-        to={`/article/${publishedDate}`}
-        title="Article Details"
+      <div
         onClick={clickHandler}
+        style={{ cursor: "pointer" }}
+        title="Article Details"
       >
         <img
           className="article-img"
           data-test="article-img"
           qa-id="article-image"
-          src={thumbnailImage.url}
-          alt={thumbnailImage.copyright}
+          src={thumbnailImage?.url}
+          alt={thumbnailImage?.copyright}
           style={{ width: 150, height: 150 }}
         />
-      </Link>
+      </div>
       <h2 data-test="article-title" qa-id="article-title">
         {title}
       </h2>
@@ -46,10 +48,10 @@ ArticleCard.propTypes = {
   article: PropTypes.shape({
     abstract: PropTypes.string,
     byline: PropTypes.string,
-    largeImage: PropTypes.object,
+    largeImage: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     publishedDate: PropTypes.string,
     section: PropTypes.string,
-    thumbnailImage: PropTypes.object,
+    thumbnailImage: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     title: PropTypes.string,
     url: PropTypes.string,
   }).isRequired,
