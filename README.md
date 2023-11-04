@@ -46,6 +46,12 @@
 
 ![Screenshot 2023-11-01 at 12 59 10 PM](https://user-images.githubusercontent.com/28677929/279774196-52e79b4f-e513-4970-8a3f-19cf3c9afbf9.png)
 
+![Screenshot 2023-11-03 at 10 53 11 PM](https://user-images.githubusercontent.com/28677929/280446504-c79ac19e-0088-4ee0-8c9d-187543b2809d.png)
+
+## Wireframes
+
+Find the Figma design file here: [figma-url1]
+
 ## About The Project
 
 <img width="721" alt="Screenshot 2023-11-01 at 1 20 40 PM" src="https://user-images.githubusercontent.com/28677929/279779720-e97887b1-10d6-474f-8532-a8300bee010e.png">
@@ -64,6 +70,7 @@ This is a web application built to provide a selection of news articles to keep 
 - ![React Router][React-Router-shield]
 - ![JavaScript][JavaScript-shield]
 - ![SASS][SASS-shield]
+- ![Figma][Figma-shield]
 - ![Cypress][Cypress-shield]
 - ![Playwright][Playwright-shield]
 - ![Vercel][Vercel-shield]
@@ -196,5 +203,7 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url1]: https://www.linkedin.com/in/ali-nix-38b9b9126/
 [turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
+[Figma-shield]: https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white
 [Udemy-shield]: https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=Udemy&logoColor=white
 [udemy-url1]: https://www.udemy.com/
+[figma-url1]: https://www.figma.com/file/b3k2xEo1WGSn7Mz4KMkXdX/News-App?type=design&node-id=0-1&mode=design&t=SZlIYTi8D40EXHbl-0
