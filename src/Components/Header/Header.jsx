@@ -1,5 +1,6 @@
 import logo from "../../assets/nyt-logo.jpg";
 import timesSquareVideo from "../../assets/times_square_nyc.mp4";
+// import "../../sassStyles/_variables.scss";
 import "./Header.css";
 
 const Header = () => {

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { formatDate } from "../../utilities";
 import PropTypes from "prop-types";
+// import "../../sassStyles/_variables.scss";
 import "./SingleArticle.css";
 
 const SingleArticle = ({ articles, selectedCategory }) => {

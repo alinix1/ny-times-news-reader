@@ -20,7 +20,7 @@ test("the user should be able to click on an article card and navigate to the de
   await browser.newPage();
 });
 
-test("there should be a large image, title, byline, abstract, and link", async ({
+test("there should be a large image, title, byline, abstract, date, and link", async ({
   page,
 }) => {
   await page.goto(URL);
@@ -40,6 +40,9 @@ test("there should be a large image, title, byline, abstract, and link", async (
   );
   await expect(page.locator("[qa-id='detail-article-abstract']")).toBeVisible(
     "Abstract element is not visible"
+  );
+  await expect(page.locator("[qa-id='detail-article-date']")).toBeVisible(
+    "Date element is not visible"
   );
 });
 

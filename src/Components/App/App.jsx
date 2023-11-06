@@ -6,6 +6,7 @@ import ArticleList from "../ArticleList/ArticleList";
 import About from "../About/About";
 import SingleArticle from "../SingleArticle/SingleArticle";
 import { fetchArticlesData } from "../../apiCalls";
+// import "../../sassStyles/_variables.scss";
 import "./App.css";
 
 const App = () => {

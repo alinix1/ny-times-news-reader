@@ -1,5 +1,14 @@
 @import '../../sassStyles/_variables.scss'
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #d9cab8;
+}
+
 .App {
     display: flex;
     flex-direction: column;

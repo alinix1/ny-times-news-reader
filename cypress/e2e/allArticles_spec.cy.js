@@ -61,7 +61,7 @@ describe("Main Article Page", () => {
     cy.get('[data-test="article-img"]').should("be.visible");
     cy.get('[data-test="article-title"]').should("be.visible");
     cy.get('[data-test="article-byline"]').should("be.visible");
-    cy.get(':nth-child(2) > a > [data-test="article-img"]').should("exist");
+    cy.get(':nth-child(2) > div > [data-test="article-img"]').should("exist");
     cy.contains(
       '[data-test="article-title"]',
       "Ann Philbin, Who Remade L.A.’s Hammer Museum, to Step Down"
@@ -79,7 +79,7 @@ describe("Main Article Page", () => {
     cy.get('[data-test="article-container"]')
       .should("be.visible")
       .children()
-      .get(':nth-child(1) > a > [data-test="article-img"]')
+      .get(':nth-child(1) > div > [data-test="article-img"]')
       .click();
   });
 });

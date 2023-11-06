@@ -20,9 +20,8 @@ describe("Detail Article Page", () => {
   });
 
   it("Should show all article cards and be able to click on an article image and be shown more info on article", () => {
-    cy.get('[data-test="article-container"]')
-      .children()
-      .get(':nth-child(1) > a > [data-test="article-img"]')
+    cy.get('[data-test="article-container"]').children();
+    cy.get(':nth-child(1) > div > [data-test="article-img"]')
       .click()
       .get('[data-test="single-article-img"]')
       .should("be.visible")
@@ -31,8 +30,9 @@ describe("Detail Article Page", () => {
       .get('[data-test="single-article-byline"]')
       .should("be.visible")
       .get('[data-test="single-article-abstract"]')
+      .should("be.visible")
+      .get('[data-test="single-article-date"]')
       .should("be.visible");
-
     cy.contains(
       '[data-test="single-article-title"]',
       "The Real End of David Chang’s Momofuku Ko Happened Years Ago"
@@ -42,13 +42,14 @@ describe("Detail Article Page", () => {
       '[data-test="single-article-abstract"]',
       "The revolutionary tasting-menu restaurant eventually came to resemble the fine-dining titans it tried to dethrone."
     );
+    cy.contains('[data-test="single-article-date"]', "Oct 28, 2023 3:02 AM");
     cy.get('[data-test="link-details"]').contains("The New York Times").click();
   });
 
   it("Should be able to click on the full article link", () => {
     cy.get('[data-test="article-container"]')
       .children()
-      .get(':nth-child(1) > a > [data-test="article-img"]')
+      .get(':nth-child(1) > div > [data-test="article-img"]')
       .click();
 
     cy.get('[data-test="link-details"]').contains("The New York Times").click();

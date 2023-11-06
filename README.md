@@ -46,11 +46,11 @@
 
 ![Screenshot 2023-11-01 at 12 59 10 PM](https://user-images.githubusercontent.com/28677929/279774196-52e79b4f-e513-4970-8a3f-19cf3c9afbf9.png)
 
-![Screenshot 2023-11-03 at 10 53 11 PM](https://user-images.githubusercontent.com/28677929/280446504-c79ac19e-0088-4ee0-8c9d-187543b2809d.png)
+![Screenshot 2023-11-05 at 11 37 35 AM](https://user-images.githubusercontent.com/28677929/280570066-b55b1a1b-8d11-4e6a-bf4a-a4ff6b25916e.png)
 
 ## Wireframes
 
-Find the Figma design file here: [figma-url1]
+Find the Figma design file here: [![figma file][Figma-shield]][figma-url1]
 
 ## About The Project
 

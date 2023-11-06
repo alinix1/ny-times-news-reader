@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import { fetchArticlesData } from "../../apiCalls";
 import loading from "../../assets/loading.jpg";
+// import "../../sassStyles/_variables.scss";
 import "./ArticleList.css";
 
 const ArticleList = ({
