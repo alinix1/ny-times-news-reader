@@ -1,0 +1,41 @@
+@import '../../../src/sassStyles/variables';
+@import '../../../src/sassStyles/typography';
+
+.article-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.article-not-found {
+    color: $secondary-font-color;
+}
+
+.large-img {
+    width: 75vw;
+    max-width: 800px;
+    border-radius: 3px;
+}
+
+.details-caption {
+    font-size: $font-size-small;
+}
+
+.details-title {
+    font-size: $font-size-extra-large;
+}
+
+.details-byline {
+    font-size: $font-size-large;
+}
+
+.details-abstract {
+    font-size: $font-size-medium;
+}
+
+.link-details {
+    font-size: $font-size-medium;
+}

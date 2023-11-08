@@ -1,0 +1,39 @@
+@import '../../../src/sassStyles/variables';
+
+.header-container {
+    background-color: $header-background-color;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-title {
+    font-family: $font-family;
+    color: $secondary-font-color;
+    margin: 0;
+    flex: 1;
+}
+
+.nyt-logo {
+    height: 4rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.video-container {
+    text-align: center;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.background-video {
+    width: 80%;
+    height: auto;
+}

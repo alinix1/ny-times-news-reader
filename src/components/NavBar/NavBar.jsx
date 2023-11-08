@@ -7,8 +7,8 @@ import artsIcon from "../../assets/arts.jpg";
 import foodIcon from "../../assets/food.jpg";
 import healthIcon from "../../assets/health.jpg";
 import aboutIcon from "../../assets/lightbulb.jpg";
-// import "../../sassStyles/_variables.scss";
-import "./NavBar.css";
+import "../../sassStyles/_variables.scss";
+import "./NavBar.scss";
 
 const NavBar = () => {
   const active = {

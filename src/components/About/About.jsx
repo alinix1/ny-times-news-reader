@@ -2,6 +2,8 @@ import "./About.css";
 import newspaper from "../../assets/reading_news.jpg";
 import typewriter from "../../assets/typewriter.jpg";
 import nyt from "../../assets/nyt.jpg";
+import "../../sassStyles/_variables.scss";
+import "./About.scss";
 
 const About = () => {
   return (

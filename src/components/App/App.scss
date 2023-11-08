@@ -1,4 +1,4 @@
-@import '../../sassStyles/_variables.scss'
+@import '../../../src/sassStyles/variables';
 
 html,
 body {
@@ -6,7 +6,7 @@ body {
     overflow-x: auto;
     margin: 0;
     padding: 0;
-    background-color: #d9cab8;
+    background-color: $background-color;
 }
 
 .App {
@@ -19,7 +19,7 @@ body {
 }
 
 .app-container {
-    max-width: $container-max-width;
+    max-width: 100%;
     overflow-x: auto;
     position: relative;
 }

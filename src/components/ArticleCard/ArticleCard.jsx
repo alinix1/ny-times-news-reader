@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import "./ArticleCard.css";
-// import "../../sassStyles/_variables.scss";
 import PropTypes from "prop-types";
+import "../../sassStyles/_variables.scss";
+import "./ArticleCard.scss";
 
 const ArticleCard = ({ article, setSelectedCategory }) => {
   const { title, byline, thumbnailImage, publishedDate } = article;

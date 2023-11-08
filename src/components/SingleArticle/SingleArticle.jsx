@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom";
 import { formatDate } from "../../utilities";
 import PropTypes from "prop-types";
-// import "../../sassStyles/_variables.scss";
-import "./SingleArticle.css";
-
+import "../../sassStyles/_variables.scss";
+import "./SingleArticle.scss";
 const SingleArticle = ({ articles, selectedCategory }) => {
   const { id } = useParams();
 

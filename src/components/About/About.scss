@@ -1,4 +1,5 @@
-@import '../../sassStyles/_variables.scss'
+@import '../../../src/sassStyles/variables';
+@import '../../../src/sassStyles/typography';
 
 .section-about {
     padding: 20rem 0;
@@ -15,17 +16,14 @@
 
 .about-title {
     text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-size: $font-size-extra-large;
     font-family: $font-family;
     margin-top: -8rem;
 }
 
 .heading-secondary {
-    font-size: 1.6rem;
+    font-size: $font-size-large;
     text-transform: uppercase;
-    font-weight: 700;
     display: inline-block;
     background-image: linear-gradient(to right, #d937f0, #a904bf);
     -webkit-background-clip: text;
@@ -41,8 +39,8 @@
 }
 
 .about-paragraph {
-    font-size: 1.6rem;
-    font-family: "Noticia Text, sans-serif";
+    font-size: $font-size-large;
+    font-family: $font-family;
     padding-left: 2rem;
     line-height: 1.5;
 }
