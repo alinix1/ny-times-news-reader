@@ -1,5 +1,6 @@
 @import '../../../src/sassStyles/variables';
 @import '../../../src/sassStyles/typography';
+@import '../../../src/sassStyles/animations';
 
 .section-about {
     padding: 20rem 0;
@@ -17,7 +18,6 @@
 .about-title {
     text-align: center;
     font-size: $font-size-extra-large;
-    font-family: $font-family;
     margin-top: -8rem;
 }
 
@@ -29,8 +29,9 @@
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 0.2rem;
-    transition: all 0.2s;
     margin-top: -3rem;
+
+    @include hover-animation;
 }
 
 .heading-secondary:hover {
@@ -40,9 +41,7 @@
 
 .about-paragraph {
     font-size: $font-size-large;
-    font-family: $font-family;
     padding-left: 2rem;
-    line-height: 1.5;
 }
 
 .about-paragraph:not(:last-child) {
@@ -59,8 +58,9 @@
     border-radius: 2rem;
     position: absolute;
     z-index: 10;
-    transition: all 0.2s;
     outline-offset: 2rem;
+
+    @include hover-animation;
 }
 
 .composition-photo-p1 {
