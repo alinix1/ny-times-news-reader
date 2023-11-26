@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import "./ArticleCard.css";
 import PropTypes from "prop-types";
 import "../../sassStyles/_variables.scss";
 import "./ArticleCard.scss";

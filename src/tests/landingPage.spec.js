@@ -1,5 +1,3 @@
-// create fixture files to test on
-
 const { test, expect } = require("@playwright/test");
 
 const URL = "http://localhost:3000";
