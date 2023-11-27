@@ -1,4 +1,5 @@
 @import './variables';
+@import './animations';
 
 h1 {
     font-style: normal;
@@ -22,4 +23,64 @@ h2,
 p {
     font-family: $font-family;
     line-height: 1.5;
+}
+
+nav {
+    display: flex;
+
+    @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+    }
+}
+
+.about-title {
+    @media only screen and (max-width: $bp-small) {
+        font-size: $font-size-large;
+    }
+}
+
+.heading-secondary {
+    @media only screen and (max-width: $bp-small) {
+        font-size: $font-size-medium;
+    }
+}
+
+.about-paragraph {
+    @media only screen and (max-width: $bp-small) {
+        font-size: $font-size-small;
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: $bp-small) {
+    .composition {
+        display: block;
+        align-items: center;
+    }
+
+    .composition-photo {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
+        border-radius: 1rem;
+        outline-offset: 1rem;
+
+        @include hover-animation;
+    }
+
+    .composition-photo:hover {
+        outline: 0.5rem solid #3f3d73;
+        transform: scale(1.05) translateY(-0.05rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20;
+    }
+
+    .composition-photo-p1,
+    .composition-photo-p2,
+    .composition-photo-p3 {
+        position: static;
+        left: 0;
+        top: 0;
+    }
 }
