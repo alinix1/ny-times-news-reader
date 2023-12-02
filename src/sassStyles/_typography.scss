@@ -40,19 +40,37 @@ nav {
 }
 
 .heading-secondary {
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: $font-size-small;
+    }
+
     @media only screen and (max-width: $bp-small) {
+        font-size: $font-size-medium;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
         font-size: $font-size-medium;
     }
 }
 
 .about-paragraph {
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: $font-size-small;
+        padding-left: 1rem;
+    }
+
     @media only screen and (max-width: $bp-small) {
         font-size: $font-size-small;
         padding-left: 1rem;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: $font-size-medium;
+        padding-left: 1rem;
+    }
 }
 
-@media only screen and (max-width: $bp-small) {
+@media only screen and (max-width: $bp-medium) {
     .composition {
         display: block;
         align-items: center;
@@ -70,7 +88,38 @@ nav {
     }
 
     .composition-photo:hover {
-        outline: 0.5rem solid #3f3d73;
+        outline: none;
+        transform: scale(1.05) translateY(-0.05rem);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20;
+    }
+
+
+    .composition-photo-p1,
+    .composition-photo-p2,
+    .composition-photo-p3 {
+        position: static;
+    }
+}
+
+@media only screen and (max-width: $bp-small) {
+    .composition {
+        display: block;
+        align-items: center;
+    }
+
+    .composition-photo,
+    .composition-photo-p1 {
+        box-sizing: border-box;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
+        border-radius: 1rem;
+        outline-offset: 1rem;
+        width: 30%;
+
+        @include hover-animation;
+    }
+
+    .composition-photo:hover {
         transform: scale(1.05) translateY(-0.05rem);
         box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
         z-index: 20;
@@ -80,7 +129,5 @@ nav {
     .composition-photo-p2,
     .composition-photo-p3 {
         position: static;
-        left: 0;
-        top: 0;
     }
 }
