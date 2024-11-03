@@ -14,7 +14,7 @@
     <br />
     <a href="https://github.com/alinix1/ny-times-news-reader"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://ny-times-news-reader-1-r7tg30z7m-alinix1.vercel.app/about">Visit the Deployed Site »</strong></a>
+    <a href="https://ny-times-news-reader-1-90fh7yaxm-alinix1s-projects.vercel.app/">Visit the Deployed Site »</strong></a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -82,7 +82,7 @@ This is a web application built to provide a selection of news articles to keep 
 
 ## Setup
 
-- Visit [Deployed Site](https://ny-times-news-reader-1-r7tg30z7m-alinix1.vercel.app/about)
+- Visit [Deployed Site](https://ny-times-news-reader-1-90fh7yaxm-alinix1s-projects.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
