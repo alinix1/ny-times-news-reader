@@ -1,10 +1,12 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { formatDate } from "../../utilities";
 import PropTypes from "prop-types";
 import "../../sassStyles/_variables.scss";
 import "./SingleArticle.scss";
+import { HiOutlineArrowLeft } from "react-icons/hi";
 const SingleArticle = ({ articles, selectedCategory }) => {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const article = articles?.find((article) => article.publishedDate === id);
 
@@ -15,13 +17,23 @@ const SingleArticle = ({ articles, selectedCategory }) => {
     <p>Article not found</p>
   ) : (
     <section className="article-details-container">
-      <img
-        className="large-img"
-        data-test="single-article-img"
-        qa-id="detail-article-img"
-        src={largeImage?.url}
-        alt={largeImage?.copyright}
-      />
+      <div className="back-arrow-container">
+        <HiOutlineArrowLeft
+          className="back-arrow"
+          data-test="back-arrow"
+          qa-id="back-arrow"
+          onClick={() => {
+            navigate(-1);
+          }}
+        />
+        <img
+          className="large-img"
+          data-test="single-article-img"
+          qa-id="detail-article-img"
+          src={largeImage?.url}
+          alt={largeImage?.copyright}
+        />
+      </div>
       <p className="details-caption" data-test="single-article-caption">
         {largeImage?.caption}
       </p>
