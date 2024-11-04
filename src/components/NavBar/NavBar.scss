@@ -8,12 +8,16 @@ nav {
     margin-bottom: 20px;
     font-size: $font-size-medium;
     background-color: $nav-background-color;
-}
 
-nav>a {
-    padding: 10px 1.7%;
-    text-decoration: none;
-    color: #364516;
+    >a {
+        padding: 10px 1.7%;
+        text-decoration: none;
+        color: $tertiary-font-color;
+
+        &.active {
+            background-color: $selected-tab-background-color;
+        }
+    }
 }
 
 .nav-item {

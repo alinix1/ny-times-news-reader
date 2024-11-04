@@ -11,17 +11,13 @@ import "../../sassStyles/_variables.scss";
 import "./NavBar.scss";
 
 const NavBar = () => {
-  const active = {
-    background: "#fff",
-  };
-
   return (
     <nav data-test="nav-bar" qa-id="nav-bar">
       <NavLink
         data-test="home-tab"
         qa-id="home-tab-title"
         to="/"
-        className={({ isActive }) => (isActive ? active : undefined)}
+        className={({ isActive }) => (isActive ? "active" : undefined)}
       >
         <div className="nav-item" data-test="nav-item" qa-id="nav-item">
           <img
@@ -36,7 +32,7 @@ const NavBar = () => {
       <NavLink
         data-test="us-tab"
         qa-id="us-tab-title"
-        className={({ isActive }) => (isActive ? active : undefined)}
+        className={({ isActive }) => (isActive ? "active" : undefined)}
         to="/us"
       >
         <div className="nav-item" qa-id="nav-item">
@@ -52,7 +48,7 @@ const NavBar = () => {
       <NavLink
         data-test="world-tab"
         qa-id="world-tab-title"
-        className={({ isActive }) => (isActive ? active : undefined)}
+        className={({ isActive }) => (isActive ? "active" : undefined)}
         to="/world"
       >
         <div className="nav-item" qa-id="nav-item">
@@ -68,7 +64,7 @@ const NavBar = () => {
       <NavLink
         data-test="technology-tab"
         qa-id="technology-tab-title"
-        className={({ isActive }) => (isActive ? active : undefined)}
+        className={({ isActive }) => (isActive ? "active" : undefined)}
         to="/technology"
       >
         <div className="nav-item" qa-id="nav-item">
@@ -84,7 +80,7 @@ const NavBar = () => {
       <NavLink
         data-test="arts-tab"
         qa-id="arts-tab-title"
-        className={({ isActive }) => (isActive ? active : undefined)}
+        className={({ isActive }) => (isActive ? "active" : undefined)}
         to="/arts"
       >
         <div className="nav-item" qa-id="nav-item">
@@ -100,7 +96,7 @@ const NavBar = () => {
       <NavLink
         data-test="food-tab"
         qa-id="food-tab-title"
-        className={({ isActive }) => (isActive ? active : undefined)}
+        className={({ isActive }) => (isActive ? "active" : undefined)}
         to="/food"
       >
         <div className="nav-item" qa-id="nav-item">
@@ -116,7 +112,7 @@ const NavBar = () => {
       <NavLink
         data-test="health-tab"
         qa-id="health-tab-title"
-        className={({ isActive }) => (isActive ? active : undefined)}
+        className={({ isActive }) => (isActive ? "active" : undefined)}
         to="/health"
       >
         <div className="nav-item" qa-id="nav-item">
@@ -132,7 +128,7 @@ const NavBar = () => {
       <NavLink
         data-test="about-tab"
         qa-id="about-tab-title"
-        className={({ isActive }) => (isActive ? active : undefined)}
+        className={({ isActive }) => (isActive ? "active" : undefined)}
         to="/about"
       >
         <div className="nav-item" qa-id="nav-item">
