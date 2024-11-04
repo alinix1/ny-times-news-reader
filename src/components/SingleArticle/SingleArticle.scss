@@ -32,8 +32,18 @@
     height: 24px;
     width: 24px;
     position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
     top: 0;
     left: 0;
+}
+
+.back-arrow:hover {
+    background-color: $article-background-color;
+    color: $primary-font-color;
+    width: 30px;
+    height: 30px;
 }
 
 .details-caption {
