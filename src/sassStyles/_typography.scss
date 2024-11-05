@@ -1,6 +1,11 @@
 @import './variables';
 @import './animations';
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 h1 {
     font-style: normal;
     font-weight: bold;
@@ -34,8 +39,20 @@ nav {
 }
 
 .about-title {
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 1rem;
+    }
+
     @media only screen and (max-width: $bp-small) {
         font-size: $font-size-large;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 0.5rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        margin-top: 0.7rem;
     }
 }
 
@@ -56,33 +73,35 @@ nav {
 .about-paragraph {
     @media only screen and (max-width: $bp-smallest) {
         font-size: $font-size-small;
-        padding-left: 1rem;
+        padding-inline: 1rem;
     }
 
     @media only screen and (max-width: $bp-small) {
         font-size: $font-size-small;
-        padding-left: 1rem;
+        padding-inline: 1rem;
     }
 
     @media only screen and (max-width: $bp-medium) {
         font-size: $font-size-medium;
-        padding-left: 1rem;
     }
 }
 
 @media only screen and (max-width: $bp-medium) {
     .composition {
-        display: block;
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
     }
 
     .composition-photo {
         max-width: 100%;
-        width: 100%;
+        height: auto;
         box-sizing: border-box;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
         border-radius: 1rem;
         outline-offset: 1rem;
+        margin-bottom: 2rem;
 
         @include hover-animation;
     }
@@ -99,12 +118,16 @@ nav {
     .composition-photo-p2,
     .composition-photo-p3 {
         position: static;
+
     }
 }
 
 @media only screen and (max-width: $bp-small) {
     .composition {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
         align-items: center;
     }
 
@@ -114,7 +137,7 @@ nav {
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
         border-radius: 1rem;
         outline-offset: 1rem;
-        width: 30%;
+        max-width: 100%;
 
         @include hover-animation;
     }
@@ -130,4 +153,29 @@ nav {
     .composition-photo-p3 {
         position: static;
     }
+}
+
+@media only screen and (max-width: $bp-smallest) {
+    .back-arrow-container .back-arrow {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media only screen and (max-width: $bp-small) {
+    .back-arrow-container .back-arrow {
+        height: 20px;
+        width: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: $bp-medium) {
+    .back-arrow-container .back-arrow {
+        height: 20px;
+        width: 20px;
+    }
+
+
 }
