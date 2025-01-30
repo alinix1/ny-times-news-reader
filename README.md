@@ -90,28 +90,19 @@ This is a web application built to provide a selection of news articles to keep 
 
 ## Installation
 
-1.  Clone down both repos, adding them to separate directories:
+1.  Clone down the repository
 
 ```sh
-git clone git@github.com:alinix1/showcase-project-api.git
+git clone https://github.com/alinix1/ny-times-news-reader.git
 ```
 
-```sh
-git clone git@github.com:alinix1/showcase-project-fe.git
-```
-
-2.  For front-end repository: Install NPM packages
+2.  Once you have cloned down the project locally: Install packages and dependencies using npm or yarn
 
 ```sh
 npm i or npm install
 npm start
-```
-
-For API repository: Install NPM packages
-
-```sh
-npm i or npm install
-node server.js
+yarn install
+yarn start
 ```
 
 <!-- USAGE -->
